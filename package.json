@@ -18,11 +18,16 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@storybook/react": "^5.0.10",
+    "@babel/core": "^7.4.4",
     "@storybook/addon-actions": "^5.0.10",
     "@storybook/addon-links": "^5.0.10",
     "@storybook/addons": "^5.0.10",
-    "@babel/core": "^7.4.4",
-    "babel-loader": "^8.0.5"
+    "@storybook/react": "^5.0.10",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^24.7.1"
   }
 }
