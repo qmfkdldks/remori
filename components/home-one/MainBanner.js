@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import ReactWOW from 'react-wow'
 
+import styled from 'styled-components';
+
 const MainBanner = () => {
     return (
 		<div className="main-banner">
@@ -24,7 +26,7 @@ const MainBanner = () => {
 								<div className="banner-image">
                                     <ReactWOW delay='0.5s' animation='fadeInDown'>
                                         <img 
-                                            src={require('../../images/banner-image/man.png')} 
+                                            src={require('../../static/images/banner-image/man.png')} 
                                             className="wow fadeInDown" 
                                             data-wow-delay="0.6s" 
                                             alt="man" 
@@ -32,7 +34,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInUp'>
                                         <img 
-                                            src={require("../../images/banner-image/code.png")} 
+                                            src={require("../../static/images/banner-image/code.png")} 
                                             className="wow fadeInUp" 
                                             data-wow-delay="0.6s" 
                                             alt="code"
@@ -40,7 +42,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInLeft'>
                                         <img 
-                                            src={require("../../images/banner-image/carpet.png")} 
+                                            src={require("../../static/images/banner-image/carpet.png")} 
                                             className="wow fadeInLeft" 
                                             data-wow-delay="0.6s" 
                                             alt="carpet"
@@ -48,7 +50,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='zoomIn'>
                                         <img 
-                                            src={require("../../images/banner-image/bin.png")} 
+                                            src={require("../../static/images/banner-image/bin.png")} 
                                             className="wow zoomIn" 
                                             data-wow-delay="0.6s" 
                                             alt="bin"
@@ -56,7 +58,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='bounceIn'>
                                         <img 
-                                            src={require("../../images/banner-image/book.png")} 
+                                            src={require("../../static/images/banner-image/book.png")} 
                                             className="wow bounceIn" 
                                             data-wow-delay="0.6s" 
                                             alt="book"
@@ -64,7 +66,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInDown'>
                                         <img 
-                                            src={require("../../images/banner-image/dekstop.png")} 
+                                            src={require("../../static/images/banner-image/dekstop.png")} 
                                             className="wow fadeInDown" 
                                             data-wow-delay="0.6s" 
                                             alt="dekstop"
@@ -72,7 +74,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='zoomIn'>
                                         <img 
-                                            src={require("../../images/banner-image/dot.png")} 
+                                            src={require("../../static/images/banner-image/dot.png")} 
                                             className="wow zoomIn" 
                                             data-wow-delay="0.6s" 
                                             alt="dot"
@@ -80,7 +82,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInUp'>
                                         <img 
-                                            src={require("../../images/banner-image/flower-top-big.png")} 
+                                            src={require("../../static/images/banner-image/flower-top-big.png")} 
                                             className="wow fadeInUp" 
                                             data-wow-delay="0.6s" 
                                             alt="flower-top-big"
@@ -88,7 +90,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='rotateIn'>
                                         <img 
-                                            src={require("../../images/banner-image/flower-top.png")} 
+                                            src={require("../../static/images/banner-image/flower-top.png")} 
                                             className="wow rotateIn" 
                                             data-wow-delay="0.6s" 
                                             alt="flower-top"
@@ -96,7 +98,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInUp'>
                                         <img 
-                                            src={require("../../images/banner-image/keyboard.png")} 
+                                            src={require("../../static/images/banner-image/keyboard.png")} 
                                             className="wow fadeInUp" 
                                             data-wow-delay="0.6s" 
                                             alt="keyboard"
@@ -104,7 +106,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='zoomIn'>
                                         <img 
-                                            src={require("../../images/banner-image/pen.png")} 
+                                            src={require("../../static/images/banner-image/pen.png")} 
                                             className="wow zoomIn" 
                                             data-wow-delay="0.6s" 
                                             alt="pen"
@@ -112,7 +114,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='zoomIn'>
                                         <img 
-                                            src={require("../../images/banner-image/table.png")} 
+                                            src={require("../../static/images/banner-image/table.png")} 
                                             className="wow zoomIn" 
                                             data-wow-delay="0.6s" 
                                             alt="table"
@@ -120,7 +122,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInLeft'>
                                         <img 
-                                            src={require("../../images/banner-image/tea-cup.png")} 
+                                            src={require("../../static/images/banner-image/tea-cup.png")} 
                                             className="wow fadeInLeft" 
                                             data-wow-delay="0.6s" 
                                             alt="tea-cup"
@@ -128,7 +130,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='rollIn'>
                                         <img 
-                                            src={require("../../images/banner-image/headphone.png")} 
+                                            src={require("../../static/images/banner-image/headphone.png")} 
                                             className="wow rollIn" 
                                             data-wow-delay="0.6s" 
                                             alt="headphone"
@@ -136,7 +138,7 @@ const MainBanner = () => {
                                     </ReactWOW>
                                     <ReactWOW delay='0.5s' animation='fadeInUp'>
                                         <img 
-                                            src={require("../../images/banner-image/main-pic.png")} 
+                                            src={require("../../static/images/banner-image/main-pic.png")} 
                                             className="wow fadeInUp" 
                                             data-wow-delay="0.6s" 
                                             alt="main-pic"
@@ -150,28 +152,28 @@ const MainBanner = () => {
 			</div>
 
 			<div className="shape1">
-				<img src={require("../../images/shape1.png")} alt="shape"/>
+				<img src={require("../../static/images/shape1.png")} alt="shape"/>
 			</div>
 			<div className="shape2 rotateme">
-				<img src={require("../../images/shape2.svg")} alt="shape"/>
+				<img src={require("../../static/images/shape2.svg")} alt="shape"/>
 			</div>
 			<div className="shape3">
-				<img src={require("../../images/shape3.svg")} alt="shape"/>
+				<img src={require("../../static/images/shape3.svg")} alt="shape"/>
 			</div>
 			<div className="shape4">
-				<img src={require("../../images/shape4.svg")} alt="shape"/>
+				<img src={require("../../static/images/shape4.svg")} alt="shape"/>
 			</div>
 			<div className="shape5">
-				<img src={require("../../images/shape5.png")} alt="shape"/>
+				<img src={require("../../static/images/shape5.png")} alt="shape"/>
 			</div>
 			<div className="shape6 rotateme">
-				<img src={require("../../images/shape4.svg")} alt="shape"/>
+				<img src={require("../../static/images/shape4.svg")} alt="shape"/>
 			</div>
 			<div className="shape7">
-				<img src={require("../../images/shape4.svg")} alt="shape"/>
+				<img src={require("../../static/images/shape4.svg")} alt="shape"/>
 			</div>
 			<div className="shape8 rotateme">
-				<img src={require("../../images/shape2.svg")} alt="shape"/>
+				<img src={require("../../static/images/shape2.svg")} alt="shape"/>
 			</div>
 		</div>
     )
