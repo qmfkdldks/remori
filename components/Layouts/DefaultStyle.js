@@ -5,7 +5,7 @@ import '../../assets/css/responsive.css'
 import '../../assets/css/animate.css'
 import React from 'react'
 import Link from '../common/ActiveLink'
-import * as Icon from 'react-feather';
+// import * as Icon from 'react-feather';
 
 class DefaultStyle extends React.Component {
 
@@ -42,7 +42,7 @@ class DefaultStyle extends React.Component {
                         <nav className="navbar navbar-expand-md navbar-light">
                             <Link href="/">
                                 <a className="navbar-brand">
-                                    <img src={require("../../images/logo.png")} alt="logo" />
+                                    <img src={require("../../static/images/logo.png")} alt="logo" />
                                 </a>
                             </Link>
 
@@ -61,7 +61,9 @@ class DefaultStyle extends React.Component {
                             <div className={classOne} id="navbarSupportedContent">
                                 <ul className="navbar-nav nav ml-auto">
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">Home <Icon.ChevronDown /></a>
+                                        <a href="#" className="nav-link">Home 
+                                        {/* <Icon.ChevronDown /> */}
+                                        </a>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
                                                 <Link activeClassName="active" href="/">
@@ -91,7 +93,9 @@ class DefaultStyle extends React.Component {
                                     
                                     <li className="nav-item">
                                         <Link activeClassName="active" href="#">
-                                            <a href="#" className="nav-link">Pages <Icon.ChevronDown /></a>
+                                            <a href="#" className="nav-link">Pages 
+                                            {/* <Icon.ChevronDown /> */}
+                                            </a>
                                         </Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
@@ -153,7 +157,9 @@ class DefaultStyle extends React.Component {
     
                                     <li className="nav-item">
                                         <Link activeClassName="active" href="#">
-                                            <a className="nav-link">Blog <Icon.ChevronDown /></a>
+                                            <a className="nav-link">Blog 
+                                            {/* <Icon.ChevronDown /> */}
+                                            </a>
                                         </Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">

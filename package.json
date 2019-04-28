@@ -13,6 +13,10 @@
   "author": "Brian Kang",
   "license": "ISC",
   "dependencies": {
+    "@bootstrap-styled/provider": "^1.4.2",
+    "@bootstrap-styled/v4": "^3.0.13",
+    "animate-css-styled-components": "^1.0.2",
+    "bootstrap-styled": "^2.4.13",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^6.0.0",
@@ -24,6 +28,7 @@
     "next-routes": "^1.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-reveal": "^1.2.2",
     "react-wow": "^1.0.0",
     "styled-components": "^4.2.0"
   },

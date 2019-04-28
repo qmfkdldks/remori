@@ -1,181 +1,251 @@
 import React from 'react'
 import Link from 'next/link'
-import ReactWOW from 'react-wow'
 
-import styled from 'styled-components';
+// import '../../assets/css/animate.css'
+// import { Wobble,  } from 'animate-css-styled-components';
+import { Fade, Bounce, Zoom, Rotate, Roll } from 'react-reveal';
+
+import styled, { keyframes } from 'styled-components';
+
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+
+import {
+    Row,
+    Col,
+    Container,
+    Button
+  } from '@bootstrap-styled/v4';
+
+const MainBannerContainer = styled.div`
+position: relative;
+height: 910px;
+z-index: 1;
+background: transparent url('../../images/banner-bg1.jpg') right top no-repeat;
+`;
+
+const HeroContent = styled.div`
+h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+`
+const BannerImage = styled.div`
+position: relative;
+`
+const BannerInnerImage = styled.img`
+position: absolute;
+z-index: ${props => props.zindex};
+top: ${props => props.top};
+left: ${props => props.left};
+right: ${props => props.right};
+display: ${props => props.display};
+`
+
+// Create the keyframes
+const rotate3d = keyframes`
+0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+`;
+
+const Shape = styled.div`
+position: absolute;
+z-index: -1;
+-webkit-animation: ${props => props.animation};
+        animation: ${props => props.animation};
+opacity: ${props => props.opacity || 1};
+`
 
 const MainBanner = () => {
     return (
-		<div className="main-banner">
+    <BootstrapProvider>
+		<MainBannerContainer>
 			<div className="d-table">
 				<div className="d-table-cell">
-					<div className="container">
-						<div className="row h-100 justify-content-center align-items-center">
-							<div className="col-lg-5">
-								<div className="hero-content">
+					<Container>
+						<Row className="h-100 justify-content-center align-items-center">
+							<Col lg="5">
+								<HeroContent>
 									<h1>Secure IT Solutions for a more secure environment</h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
 									
 									<Link href="#">
-										<a className="btn btn-primary">Get Started</a>
+										<Button>Get Started</Button>
 									</Link>
-								</div>
-							</div>
-
-							<div className="col-lg-6 offset-lg-1">
-								<div className="banner-image">
-                                    <ReactWOW delay='0.5s' animation='fadeInDown'>
-                                        <img 
-                                            src={require('../../static/images/banner-image/man.png')} 
-                                            className="wow fadeInDown" 
-                                            data-wow-delay="0.6s" 
-                                            alt="man" 
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInUp'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/code.png")} 
-                                            className="wow fadeInUp" 
-                                            data-wow-delay="0.6s" 
-                                            alt="code"
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInLeft'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/carpet.png")} 
-                                            className="wow fadeInLeft" 
-                                            data-wow-delay="0.6s" 
+								</HeroContent>
+							</Col>
+							<Col lg={{ size: 6, offset: 1 }}>
+								<BannerImage>
+                                    <Fade left delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/carpet.png")}                                                                                         
                                             alt="carpet"
+                                            top="-20px"
+                                            left="25px"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='zoomIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/bin.png")} 
-                                            className="wow zoomIn" 
-                                            data-wow-delay="0.6s" 
-                                            alt="bin"
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='bounceIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/book.png")} 
-                                            className="wow bounceIn" 
-                                            data-wow-delay="0.6s" 
-                                            alt="book"
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInDown'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/dekstop.png")} 
-                                            className="wow fadeInDown" 
-                                            data-wow-delay="0.6s" 
-                                            alt="dekstop"
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='zoomIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/dot.png")} 
-                                            className="wow zoomIn" 
-                                            data-wow-delay="0.6s" 
+                                    </Fade>
+                                    <Zoom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/dot.png")}
                                             alt="dot"
+                                            right="20px"
+                                            top="-110px"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInUp'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/flower-top-big.png")} 
-                                            className="wow fadeInUp" 
-                                            data-wow-delay="0.6s" 
-                                            alt="flower-top-big"
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='rotateIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/flower-top.png")} 
-                                            className="wow rotateIn" 
-                                            data-wow-delay="0.6s" 
-                                            alt="flower-top"
-                                        />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInUp'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/keyboard.png")} 
-                                            className="wow fadeInUp" 
-                                            data-wow-delay="0.6s" 
+                                    </Zoom>
+                                    <Fade bottom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/keyboard.png")} 
                                             alt="keyboard"
+                                            top="-28px"
+                                            left="37%"
+                                            zindex="1"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='zoomIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/pen.png")} 
-                                            className="wow zoomIn" 
-                                            data-wow-delay="0.6s" 
-                                            alt="pen"
+                                    </Fade>
+                                    <Fade bottom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/flower-top-big.png")} 
+                                            alt="flower-top-big"
+                                            right="25px"
+                                            top="-140px"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='zoomIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/table.png")} 
-                                            className="wow zoomIn" 
-                                            data-wow-delay="0.6s" 
+                                    </Fade>
+                                    <Zoom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/table.png")} 
                                             alt="table"
+                                            top="-110px"
+                                            left="90px"
+                                            zindex="1"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInLeft'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/tea-cup.png")} 
-                                            className="wow fadeInLeft" 
-                                            data-wow-delay="0.6s" 
+                                    </Zoom>
+                                    <Zoom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/bin.png")}                                                                                         
+                                            alt="bin"
+                                            top="118px"
+                                            right="12%"
+                                        />
+                                    </Zoom>
+                                    <Zoom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/pen.png")} 
+                                            alt="pen"
+                                            top="-160px"
+                                            left="37%"
+                                        />
+                                    </Zoom>
+                                    <Bounce delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/book.png")} 
+                                            alt="book"
+                                            top="-120px"
+                                            left="28%"
+                                            zindex="2"
+                                        />
+                                    </Bounce>
+                                    <Fade top delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/dekstop.png")} 
+                                            alt="dekstop"
+                                            top="-150px"
+                                            right="35%"
+                                            zindex="1"
+                                        />
+                                    </Fade>
+                                    <Rotate delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/flower-top.png")} 
+                                            alt="flower-top"
+                                            top="-35px"
+                                            right="30%"
+                                            zindex="1"
+                                        />
+                                    </Rotate>
+                                    <Fade right delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/tea-cup.png")} 
                                             alt="tea-cup"
+                                            top="-25px"
+                                            left="56%"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='rollIn'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/headphone.png")} 
-                                            className="wow rollIn" 
-                                            data-wow-delay="0.6s" 
+                                    </Fade>
+                                    <Roll delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/headphone.png")} 
                                             alt="headphone"
+                                            top="-28px"
+                                            right="105px"
                                         />
-                                    </ReactWOW>
-                                    <ReactWOW delay='0.5s' animation='fadeInUp'>
-                                        <img 
-                                            src={require("../../static/images/banner-image/main-pic.png")} 
-                                            className="wow fadeInUp" 
-                                            data-wow-delay="0.6s" 
+                                    </Roll>
+                                    <Fade delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/main-pic.png")} 
                                             alt="main-pic"
+                                            top="-28px"
+                                            right="105px"
+                                            display="none"
                                         />
-                                    </ReactWOW>
-								</div>
-							</div>
-						</div>
-					</div>
+                                    </Fade>
+                                    <Fade top delay={5000}>
+                                        <BannerInnerImage
+                                            src={require('../../images/banner-image/man.png')}  
+                                            alt="man"
+                                            top="-130px"
+                                            left="-45px"
+                                            zindex="3"
+                                        />
+                                    </Fade>
+                                    <Fade bottom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/code.png")} 
+                                            right="145px"
+                                            top="-287px"
+                                        />
+                                    </Fade>
+								</BannerImage>
+							</Col>
+						</Row>
+					</Container>
 				</div>
 			</div>
+            
 
-			<div className="shape1">
-				<img src={require("../../static/images/shape1.png")} alt="shape"/>
-			</div>
+			<Shape left="30px" top="20%" opacity=".4" animation="rotate3d 4s linear infinite">
+				<img src={require("../../images/shape1.png")} alt="shape"/>
+			</Shape>
 			<div className="shape2 rotateme">
-				<img src={require("../../static/images/shape2.svg")} alt="shape"/>
+				<img src={require("../../images/shape2.svg")} alt="shape"/>
 			</div>
 			<div className="shape3">
-				<img src={require("../../static/images/shape3.svg")} alt="shape"/>
+				<img src={require("../../images/shape3.svg")} alt="shape"/>
 			</div>
 			<div className="shape4">
-				<img src={require("../../static/images/shape4.svg")} alt="shape"/>
+				<img src={require("../../images/shape4.svg")} alt="shape"/>
 			</div>
 			<div className="shape5">
-				<img src={require("../../static/images/shape5.png")} alt="shape"/>
+				<img src={require("../../images/shape5.png")} alt="shape"/>
 			</div>
 			<div className="shape6 rotateme">
-				<img src={require("../../static/images/shape4.svg")} alt="shape"/>
+				<img src={require("../../images/shape4.svg")} alt="shape"/>
 			</div>
 			<div className="shape7">
-				<img src={require("../../static/images/shape4.svg")} alt="shape"/>
+				<img src={require("../../images/shape4.svg")} alt="shape"/>
 			</div>
 			<div className="shape8 rotateme">
-				<img src={require("../../static/images/shape2.svg")} alt="shape"/>
+				<img src={require("../../images/shape2.svg")} alt="shape"/>
 			</div>
-		</div>
+		</MainBannerContainer>
+    </BootstrapProvider>
     )
 }
 

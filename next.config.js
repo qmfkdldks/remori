@@ -22,7 +22,7 @@ const optimizedImages = require('next-optimized-images');
 module.exports = withPlugins([
     [optimizedImages, {
         inlineImageLimit: 8192,
-        imagesFolder: '/static/images',
+        imagesFolder: 'images',
         imagesName: '[name]-[hash].[ext]',
         handleImages: ['jpeg', 'jpg', 'png', 'svg', 'webp', 'gif'],
         optimizeImages: true,

@@ -7,4 +7,4 @@ import { linkTo } from '@storybook/addon-links';
 import MainBanner from './MainBanner'
 
 storiesOf('Button', module)
-  .add('with sdfdf text', () => <MainBanner />)
+  .add('with sdfdf text', () => <MainBanner/>)
