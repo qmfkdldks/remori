@@ -432,7 +432,7 @@ const MainBanner = () => {
 						<Row className="h-100 justify-content-center align-items-center">
 							<Col lg="5">
 								<HeroContent>
-									<h1>Secure IT Solutions for a more secure environment</h1>
+									<h1>Remori is IT Startup environment for a more success & failure </h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
 									
 									{/* <Link href="#"> */}

@@ -1,10 +1,18 @@
 import React from 'react'
-import styled from 'styled-components'
 import MainBanner from '../components/home-one/MainBanner'
+import BoxArea from '../components/home-one/BoxArea';
+import ServicesArea from '../components/home-one/ServicesArea';
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+class Index extends React.Component {
+  render() {
+      return (
+      <React.Fragment>
+        <MainBanner />
+        <BoxArea />
+        <ServicesArea />
+      </React.Fragment>
+      )
+  }
+}
 
-export default () => <MainBanner/>
+export default Index
