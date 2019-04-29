@@ -122,29 +122,19 @@ var _jsxFileName = "/home/liar/Documents/remori/components/home-one/MainBanner.j
 var MainBannerContainer = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__MainBannerContainer",
   componentId: "sdoueq-0"
-})(["position:relative;height:910px;z-index:1;background:transparent url('../../images/banner-bg1.jpg') right top no-repeat;.d-table{width:100%;eight:100%;}.d-table.cell{vertical-align:middle;}@media only screen and (max-width:767px){height:100%;padding-top:150px;padding-bottom:80px;background-position:center;}"]);
+})(["position:relative;height:910px;z-index:1;background:transparent url('../../images/banner-bg1.jpg') right top no-repeat;.d-table{width:100%;height:100%;}.d-table.cell{vertical-align:middle;}@media only screen and (max-width:767px){height:100%;padding-top:150px;padding-bottom:80px;background-position:center;}@media only screen and (min-width:768px) and (max-width:991px){height:100%;padding-top:185px;padding-bottom:165px;}@media only screen and (min-width:992px) and (max-width:1199px){}"]);
 var HeroContent = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__HeroContent",
   componentId: "sdoueq-1"
-})(["h1{font-size:45px;font-weight:500;margin-bottom:20px;}p{margin-bottom:30px;}@media only screen and (max-width:767px){margin-bottom:45px;h1{font-size:25px;line-height:30px;margin-bottom:15px;}}"]);
+})(["h1{font-size:45px;font-weight:500;margin-bottom:20px;}p{margin-bottom:30px;}@media only screen and (max-width:767px){margin-bottom:45px;h1{font-size:25px;line-height:30px;margin-bottom:15px;}}@media only screen and (min-width:768px) and (max-width:991px){h1{font-size:30px;margin-bottom:15px;}}@media only screen and (min-width:992px) and (max-width:1199px){h1{font-size:35px;}}"]);
 var BannerImage = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__BannerImage",
   componentId: "sdoueq-2"
-})(["position:relative;@media only screen and (max-width:767px){text-align:center;}"]);
+})(["position:relative;@media only screen and (max-width:767px){text-align:center;}@media only screen and (min-width:768px) and (max-width:991px){text-align:center;margin-top:45px;}@media only screen and (min-width:992px) and (max-width:1199px){}"]);
 var BannerInnerImage = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.img.withConfig({
   displayName: "MainBanner__BannerInnerImage",
   componentId: "sdoueq-3"
-})(["position:absolute;z-index:", ";top:", ";left:", ";right:", ";display:", ";@media only screen and (max-width:767px){display:none;position:relative;}"], function (props) {
-  return props.zindex;
-}, function (props) {
-  return props.top;
-}, function (props) {
-  return props.left;
-}, function (props) {
-  return props.right;
-}, function (props) {
-  return props.display;
-}); // Create the keyframes
+})(["position:absolute;max-width:100%;&.man{z-index:3;top:-130px;left:-45px;}&.code{right:145px;top:-287px;}&.carpet{left:25px;top:-20px;}&.bin{right:12%;top:118px;z-index:1;}&.book{left:28%;top:-120px;z-index:2;}&.desktop{right:35%;z-index:1;top:-150px;}&.dot{right:20px;top:-110px;}&.flower-top-big{right:25px;top:-140px;}&.flower-top{right:30%;z-index:1;top:-35px;}&.keyboard{left:37%;top:-28px;z-index:1;}&.pen{left:37%;top:-160px;z-index:1;}&.table{left:90px;top:-110px;}&.tea-cup{left:56%;top:-25px;z-index:2;}&.headphone{right:105px;top:-28px;}&.main-pic{display:none;}@media only screen and (max-width:767px){display:none;position:relative;&.main-pic{display:block;left:0;right:0;margin:0 auto;}}@media only screen and (min-width:768px) and (max-width:991px){position:relative;display:none;}@media only screen and (min-width:992px) and (max-width:1199px){&.man{top:-140px;left:-120px;}&.code{right:160px;top:-286px;}&.carpet{left:-30px;top:-15px;}&.bin{right:15%;top:105px;}&.book{left:15%;top:-120px;}&.desktop{right:37%;top:-160px;}&.dot{right:20px;top:-110px;}&.flower-top-big{right:25px;top:-140px;}&.flower-top{right:28%;top:-25px;}&.keyboard{left:29%;top:-35px;}&.pen{left:26%;top:-160px;}&.table{left:15px;top:-110px;}&.tea-cup{left:50%;top:-18px;}&.headphone{right:98px;top:-20px;}&.main-pic{}}"]); // Create the keyframes
 
 var rotate3d = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);}"]);
 var movebounce = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["0%{-webkit-transform:translateY(0px);transform:translateY(0px);}50%{-webkit-transform:translateY(20px);transform:translateY(20px);}100%{-webkit-transform:translateY(0px);transform:translateY(0px);}"]);
@@ -154,94 +144,68 @@ var animationFramesOne = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["
 var Shape = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__Shape",
   componentId: "sdoueq-4"
-})(["position:absolute;z-index:", ";animation:", " ", ";opacity:", ";top:", ";right:", ";left:", ";bottom:", ";"], function (props) {
-  return props.zindex;
-}, function (props) {
+})(["position:absolute;animation:", " ", ";&.shape1{top:20%;z-index:-1;left:30px;opacity:.4;}&.shape2{z-index:-1;top:60%;left:15%;}&.shape3{left:25%;bottom:15%;z-index:-1;}&.shape4{right:25%;bottom:15%;z-index:-1;}&.shape5{right:5%;top:10%;z-index:-1;opacity:.2;}&.shape6{z-index:-1;top:40%;right:10%;}&.shape7{left:25%;top:15%;z-index:-1;}&.shape8{z-index:-1;top:15%;right:10%;}@media only screen and (max-width:767px){display:none;&.shape1,&.shape2,&.shape3,&.shape4,&.shape5{display:none;}}@media only screen and (min-width:768px) and (max-width:991px){&.shape1,&.shape2,&.shape3,&.shape4,&.shape5,&.shape7{display:none;}}@media only screen and (min-width:992px) and (max-width:1199px){&.shape1{display:none;}}"], function (props) {
   return props.animation;
 }, function (props) {
   return props.animationOptions;
-}, function (props) {
-  return props.opacity;
-}, function (props) {
-  return props.top;
-}, function (props) {
-  return props.right;
-}, function (props) {
-  return props.left;
-}, function (props) {
-  return props.bottom;
 });
 
 var MainBanner = function MainBanner() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainBannerContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-table",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-table-cell",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 437
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177
+      lineNumber: 440
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     className: "h-100 justify-content-center align-items-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 441
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Col"], {
     lg: "5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179
+      lineNumber: 442
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContent, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 443
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 444
     },
     __self: this
   }, "Secure IT Solutions for a more secure environment"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 445
     },
     __self: this
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184
+      lineNumber: 447
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Button"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185
+      lineNumber: 448
     },
     __self: this
   }, "Get Started")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Col"], {
@@ -251,13 +215,13 @@ var MainBanner = function MainBanner() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 452
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerImage, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 453
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
@@ -265,34 +229,32 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 454
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/carpet.png */ "./images/banner-image/carpet.png"),
     alt: "carpet",
-    top: "-20px",
-    left: "25px",
+    className: "carpet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192
+      lineNumber: 455
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199
+      lineNumber: 461
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/dot.png */ "./images/banner-image/dot.png"),
     alt: "dot",
-    right: "20px",
-    top: "-110px",
+    className: "dot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200
+      lineNumber: 462
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
@@ -300,106 +262,32 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 207
+      lineNumber: 468
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/keyboard.png */ "./images/banner-image/keyboard.png"),
     alt: "keyboard",
-    top: "-28px",
-    left: "37%",
-    zindex: "1",
+    className: "keyboard",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 208
+      lineNumber: 469
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216
+      lineNumber: 475
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/table.png */ "./images/banner-image/table.png"),
     alt: "table",
-    top: "-110px",
-    left: "90px",
-    zindex: "1",
+    className: "table",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    bottom: true,
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 225
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/flower-top-big.png */ "./images/banner-image/flower-top-big.png"),
-    alt: "flower-top-big",
-    right: "25px",
-    top: "-140px",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 226
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 233
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/bin.png */ "./images/banner-image/bin.png"),
-    alt: "bin",
-    top: "118px",
-    right: "12%",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 234
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 241
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/pen.png */ "./images/banner-image/pen.png"),
-    alt: "pen",
-    top: "-160px",
-    left: "37%",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 242
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Bounce"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 249
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/book.png */ "./images/banner-image/book.png"),
-    alt: "book",
-    top: "-120px",
-    left: "28%",
-    zindex: "2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 250
+      lineNumber: 476
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
@@ -407,36 +295,114 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 258
+      lineNumber: 482
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/man.png */ "./images/banner-image/man.png"),
+    alt: "man",
+    className: "man",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 483
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    bottom: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 489
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/flower-top-big.png */ "./images/banner-image/flower-top-big.png"),
+    alt: "flower-top-big",
+    className: "flower-top-big",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 490
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 496
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/bin.png */ "./images/banner-image/bin.png"),
+    alt: "bin",
+    className: "bin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 497
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 503
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/pen.png */ "./images/banner-image/pen.png"),
+    alt: "pen",
+    className: "pen",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 504
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Bounce"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 510
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/book.png */ "./images/banner-image/book.png"),
+    alt: "book",
+    className: "book",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 511
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    top: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 517
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/dekstop.png */ "./images/banner-image/dekstop.png"),
     alt: "dekstop",
-    top: "-150px",
-    right: "35%",
-    zindex: "1",
+    className: "desktop",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259
+      lineNumber: 518
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Rotate"], {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267
+      lineNumber: 524
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/flower-top.png */ "./images/banner-image/flower-top.png"),
     alt: "flower-top",
-    top: "-35px",
-    right: "30%",
-    zindex: "1",
+    className: "flower-top",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268
+      lineNumber: 525
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
@@ -444,72 +410,49 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 276
+      lineNumber: 531
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/tea-cup.png */ "./images/banner-image/tea-cup.png"),
     alt: "tea-cup",
-    top: "-25px",
-    left: "56%",
+    className: "tea-cup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 277
+      lineNumber: 532
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Roll"], {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 284
+      lineNumber: 538
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/headphone.png */ "./images/banner-image/headphone.png"),
     alt: "headphone",
-    top: "-28px",
-    right: "105px",
+    className: "headphone",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 285
+      lineNumber: 539
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 292
+      lineNumber: 545
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/main-pic.png */ "./images/banner-image/main-pic.png"),
     alt: "main-pic",
     className: "main-pic",
-    top: "-28px",
-    right: "105px",
     display: "none",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 293
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    top: true,
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 302
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/man.png */ "./images/banner-image/man.png"),
-    alt: "man",
-    top: "-130px",
-    left: "-45px",
-    zindex: "3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 303
+      lineNumber: 546
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
@@ -517,27 +460,25 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 311
+      lineNumber: 553
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
     src: __webpack_require__(/*! ../../images/banner-image/code.png */ "./images/banner-image/code.png"),
-    right: "145px",
-    top: "-287px",
+    className: "code",
+    alt: "code",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 312
+      lineNumber: 554
     },
     __self: this
-  })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    left: "30px",
-    top: "20%",
-    opacity: ".4",
+  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    className: "shape1",
     animation: rotate3d,
     animationOptions: "4s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 326
+      lineNumber: 568
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -545,18 +486,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 327
+      lineNumber: 569
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    left: "15%",
-    top: "60%",
-    zindex: "-1",
+    className: "shape2",
     animation: rotateme,
     animationOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 329
+      lineNumber: 571
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -564,17 +503,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 330
+      lineNumber: 572
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    left: "25%",
-    bottom: "15%",
+    className: "shape3",
     animation: animationFramesOne,
     animationOptions: "15s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 332
+      lineNumber: 574
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -582,18 +520,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 333
+      lineNumber: 575
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    right: "25%",
-    bottom: "15%",
-    zindex: "-1",
+    className: "shape4",
     animation: animationFramesOne,
     animationOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 335
+      lineNumber: 577
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -601,19 +537,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 336
+      lineNumber: 578
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    right: "5%",
-    top: "10%",
-    zindex: "-1",
-    opacity: ".2",
+    className: "shape5",
     animation: movebounce,
     animationOptions: "5s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 338
+      lineNumber: 580
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -621,18 +554,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 339
+      lineNumber: 581
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    top: "40%",
-    right: "10%",
-    zindex: "-1",
+    className: "shape6",
     animation: rotateme,
     animationOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 341
+      lineNumber: 583
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -640,18 +571,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 342
+      lineNumber: 584
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    top: "15%",
-    left: "25%",
-    zindex: "-1",
+    className: "shape7",
     animation: animationFramesOne,
     animatinoOptions: "20s linear infinte",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 344
+      lineNumber: 586
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -659,18 +588,16 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 345
+      lineNumber: 587
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
-    top: "15%",
-    right: "10%",
-    zindex: "-1",
+    className: "shape8",
     animation: rotateme,
     animatinoOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 347
+      lineNumber: 589
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -678,7 +605,7 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 348
+      lineNumber: 590
     },
     __self: this
   })));

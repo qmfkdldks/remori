@@ -1003,7 +1003,7 @@ function (_App) {
           lineNumber: 22
         },
         __self: this
-      }, "StartP - React + Next + Express Bootstrap 4 Template")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
+      }, "Remori - Startup Platform")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
