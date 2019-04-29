@@ -2314,6 +2314,11 @@ var _jsxFileName = "/home/liar/Documents/remori/pages/_document.js";
 
 
 
+var Body = styled_components__WEBPACK_IMPORTED_MODULE_11___default.a.body.withConfig({
+  displayName: "_document__Body",
+  componentId: "sc-1ja0h92-0"
+})(["padding:0;margin:0;font-size:14px;*,::after,::before{box-sizing:border-box;}"]);
+
 var MyDocument =
 /*#__PURE__*/
 function (_Document) {
@@ -2332,13 +2337,13 @@ function (_Document) {
         lang: "en",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("meta", {
@@ -2346,7 +2351,7 @@ function (_Document) {
         content: "width=device-width, initial-scale=1, shrink-to-fit=no",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 49
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
@@ -2355,34 +2360,34 @@ function (_Document) {
         href: __webpack_require__(/*! ../images/favicon.png */ "./images/favicon.png"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 50
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", {
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Body, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 54
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], {
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 56
         },
         __self: this
-      }))));
+      })));
     }
   }], [{
     key: "getInitialProps",
@@ -2406,7 +2411,7 @@ function (_Document) {
                         return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 13
+                            lineNumber: 25
                           },
                           __self: this
                         })));

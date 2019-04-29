@@ -322,39 +322,31 @@ const moveleftbounce = keyframes`
 
 const rotateme = keyframes`
 from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
 `
 
 const animationFramesOne = keyframes`
 0% {
-    -webkit-transform: translate(0px, 0px) rotate(0deg);
-            transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
   20% {
-    -webkit-transform: translate(73px, -1px) rotate(36deg);
-            transform: translate(73px, -1px) rotate(36deg);
+    transform: translate(73px, -1px) rotate(36deg);
   }
   40% {
-    -webkit-transform: translate(141px, 72px) rotate(72deg);
-            transform: translate(141px, 72px) rotate(72deg);
+    transform: translate(141px, 72px) rotate(72deg);
   }
   60% {
-    -webkit-transform: translate(83px, 122px) rotate(108deg);
-            transform: translate(83px, 122px) rotate(108deg);
+    transform: translate(83px, 122px) rotate(108deg);
   }
   80% {
-    -webkit-transform: translate(-40px, 72px) rotate(144deg);
-            transform: translate(-40px, 72px) rotate(144deg);
+    transform: translate(-40px, 72px) rotate(144deg);
   }
   100% {
-    -webkit-transform: translate(0px, 0px) rotate(0deg);
-            transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
 `
 
@@ -413,7 +405,6 @@ animation: ${props => props.animation} ${props => props.animationOptions};
   }
 
 @media only screen and (max-width: 767px) {
-    display: none;
     &.shape1, &.shape2, &.shape3, &.shape4, &.shape5 {
         display: none;
     }
@@ -435,8 +426,8 @@ animation: ${props => props.animation} ${props => props.animationOptions};
 const MainBanner = () => {
     return (
 		<MainBannerContainer>
-			{/* <div className="d-table"> */}
-				{/* <div className="d-table-cell"> */}
+			<div className="d-table">
+				<div className="d-table-cell">
 					<Container>
 						<Row className="h-100 justify-content-center align-items-center">
 							<Col lg="5">
@@ -444,9 +435,9 @@ const MainBanner = () => {
 									<h1>Secure IT Solutions for a more secure environment</h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
 									
-									<Link href="#">
-										<Button>Get Started</Button>
-									</Link>
+									{/* <Link href="#"> */}
+                                    <StyledButton>Get Started</StyledButton>
+									{/* </Link> */}
 								</HeroContent>
 							</Col>
 							<Col lg={{ size: 6, offset: 1 }}>
@@ -479,6 +470,20 @@ const MainBanner = () => {
                                             className="table"
                                         />
                                     </Zoom>
+                                    <Zoom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/pen.png")} 
+                                            alt="pen"
+                                            className="pen"
+                                        />
+                                    </Zoom>
+                                    <Bounce delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/book.png")} 
+                                            alt="book"
+                                            className="book"
+                                        />
+                                    </Bounce>
                                     <Fade top delay={5000}>
                                         <BannerInnerImage
                                             src={require('../../images/banner-image/man.png')}  
@@ -500,20 +505,6 @@ const MainBanner = () => {
                                             className="bin"
                                         />
                                     </Zoom>
-                                    <Zoom delay={5000}>
-                                        <BannerInnerImage 
-                                            src={require("../../images/banner-image/pen.png")} 
-                                            alt="pen"
-                                            className="pen"
-                                        />
-                                    </Zoom>
-                                    <Bounce delay={5000}>
-                                        <BannerInnerImage 
-                                            src={require("../../images/banner-image/book.png")} 
-                                            alt="book"
-                                            className="book"
-                                        />
-                                    </Bounce>
                                     <Fade top delay={5000}>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/dekstop.png")} 
@@ -561,36 +552,49 @@ const MainBanner = () => {
 							</Col>
 						</Row>
 					</Container>
-				{/* </div> */}
-			{/* </div> */}
+				</div>
+			</div>
             
 
 			<Shape className="shape1" animation={rotate3d} animationOptions="4s linear infinite">
 				<img src={require("../../images/shape1.png")} alt="shape"/>
 			</Shape>
-			<Shape className="shape2" animation={rotateme} animationOptions="20s linear infinite">
+			<Shape className="shape2" animation={rotateme} animationOptions="5s linear infinite">
 				<img src={require("../../images/shape2.svg")} alt="shape"/>
 			</Shape>
-			<Shape className="shape3" animation={animationFramesOne} animationOptions="15s linear infinite">
+			<Shape className="shape3" animation={animationFramesOne} animationOptions="15s infinite linear">
 				<img src={require("../../images/shape3.svg")} alt="shape"/>
 			</Shape>
-			<Shape className="shape4" animation={animationFramesOne} animationOptions="20s linear infinite">
+			<Shape className="shape4" animation={animationFramesOne} animationOptions="20s infinite linear">
 				<img src={require("../../images/shape4.svg")} alt="shape"/>
 			</Shape>
 			<Shape className="shape5" animation={movebounce} animationOptions="5s linear infinite">
 				<img src={require("../../images/shape5.png")} alt="shape"/>
 			</Shape>
-			<Shape className="shape6" animation={rotateme} animationOptions="20s linear infinite">
+			<Shape className="shape6" animation={rotateme} animationOptions="10s linear infinite">
 				<img src={require("../../images/shape4.svg")} alt="shape"/>
 			</Shape>
-			<Shape className="shape7" animation={animationFramesOne} animatinoOptions="20s linear infinte">
+			<Shape className="shape7" animation={animationFramesOne} animationOptions="20s infinite linear">
 				<img src={require("../../images/shape4.svg")} alt="shape"/>
 			</Shape>
-			<Shape className="shape8" animation={rotateme} animatinoOptions="20s linear infinite">
+			<Shape className="shape8" animation={rotateme} animationOptions="10s linear infinite">
 				<img src={require("../../images/shape2.svg")} alt="shape"/>
 			</Shape>
 		</MainBannerContainer>
     )
 }
+
+const StyledButton = styled(Button)`
+font-weight: 600;
+font-size: 14px;
+border: none;
+padding: 15px 40px;
+position: relative;
+border-radius: 4px;
+z-index: 1;
+text-transform: uppercase;
+-webkit-transition: 0.5s;
+transition: 0.5s;
+`
 
 export default MainBanner
