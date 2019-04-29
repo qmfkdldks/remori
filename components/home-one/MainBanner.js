@@ -1,13 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-// import '../../assets/css/animate.css'
 // import { Wobble,  } from 'animate-css-styled-components';
 import { Fade, Bounce, Zoom, Rotate, Roll } from 'react-reveal';
 
 import styled, { keyframes } from 'styled-components';
-
-import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import {
     Row,
@@ -21,6 +18,22 @@ position: relative;
 height: 910px;
 z-index: 1;
 background: transparent url('../../images/banner-bg1.jpg') right top no-repeat;
+
+.d-table {
+    width: 100%;
+    eight: 100%;
+}
+
+.d-table.cell {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background-position: center;   
+}
 `;
 
 const HeroContent = styled.div`
@@ -33,9 +46,23 @@ h1 {
   p {
     margin-bottom: 30px;
   }
+
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 45px;
+
+    h1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+  }
 `
 const BannerImage = styled.div`
 position: relative;
+
+@media only screen and (max-width: 767px) {
+    text-align: center;
+}
 `
 const BannerInnerImage = styled.img`
 position: absolute;
@@ -44,6 +71,11 @@ top: ${props => props.top};
 left: ${props => props.left};
 right: ${props => props.right};
 display: ${props => props.display};
+
+@media only screen and (max-width: 767px) {
+    display: none;
+    position: relative;
+}
 `
 
 // Create the keyframes
@@ -58,17 +90,87 @@ const rotate3d = keyframes`
 }
 `;
 
+const movebounce = keyframes`
+0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+`; 
+
+const moveleftbounce = keyframes`
+0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+`
+
+const rotateme = keyframes`
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+`
+
+const animationFramesOne = keyframes`
+0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+            transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+            transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+            transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+            transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+`
+
 const Shape = styled.div`
 position: absolute;
-z-index: -1;
--webkit-animation: ${props => props.animation};
-        animation: ${props => props.animation};
-opacity: ${props => props.opacity || 1};
+z-index: ${props => props.zindex};
+animation: ${props => props.animation} ${props => props.animationOptions};
+opacity: ${props => props.opacity};
+top: ${props => props.top};
+right: ${props => props.right};
+left: ${props => props.left};
+bottom: ${props => props.bottom};
 `
 
 const MainBanner = () => {
     return (
-    <BootstrapProvider>
 		<MainBannerContainer>
 			<div className="d-table">
 				<div className="d-table-cell">
@@ -111,14 +213,6 @@ const MainBanner = () => {
                                             zindex="1"
                                         />
                                     </Fade>
-                                    <Fade bottom delay={5000}>
-                                        <BannerInnerImage 
-                                            src={require("../../images/banner-image/flower-top-big.png")} 
-                                            alt="flower-top-big"
-                                            right="25px"
-                                            top="-140px"
-                                        />
-                                    </Fade>
                                     <Zoom delay={5000}>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/table.png")} 
@@ -128,6 +222,14 @@ const MainBanner = () => {
                                             zindex="1"
                                         />
                                     </Zoom>
+                                    <Fade bottom delay={5000}>
+                                        <BannerInnerImage 
+                                            src={require("../../images/banner-image/flower-top-big.png")} 
+                                            alt="flower-top-big"
+                                            right="25px"
+                                            top="-140px"
+                                        />
+                                    </Fade>
                                     <Zoom delay={5000}>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/bin.png")}                                                                                         
@@ -191,6 +293,7 @@ const MainBanner = () => {
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/main-pic.png")} 
                                             alt="main-pic"
+                                            className="main-pic"
                                             top="-28px"
                                             right="105px"
                                             display="none"
@@ -220,32 +323,31 @@ const MainBanner = () => {
 			</div>
             
 
-			<Shape left="30px" top="20%" opacity=".4" animation="rotate3d 4s linear infinite">
+			<Shape left="30px" top="20%" opacity=".4" animation={rotate3d} animationOptions="4s linear infinite">
 				<img src={require("../../images/shape1.png")} alt="shape"/>
 			</Shape>
-			<div className="shape2 rotateme">
+			<Shape left="15%" top="60%" zindex="-1" animation={rotateme} animationOptions="20s linear infinite">
 				<img src={require("../../images/shape2.svg")} alt="shape"/>
-			</div>
-			<div className="shape3">
+			</Shape>
+			<Shape left="25%" bottom="15%" animation={animationFramesOne} animationOptions="15s linear infinite">
 				<img src={require("../../images/shape3.svg")} alt="shape"/>
-			</div>
-			<div className="shape4">
+			</Shape>
+			<Shape right="25%" bottom="15%" zindex="-1" animation={animationFramesOne} animationOptions="20s linear infinite">
 				<img src={require("../../images/shape4.svg")} alt="shape"/>
-			</div>
-			<div className="shape5">
+			</Shape>
+			<Shape right="5%" top="10%" zindex="-1" opacity=".2" animation={movebounce} animationOptions="5s linear infinite">
 				<img src={require("../../images/shape5.png")} alt="shape"/>
-			</div>
-			<div className="shape6 rotateme">
+			</Shape>
+			<Shape top="40%" right="10%" zindex="-1" animation={rotateme} animationOptions="20s linear infinite">
 				<img src={require("../../images/shape4.svg")} alt="shape"/>
-			</div>
-			<div className="shape7">
+			</Shape>
+			<Shape top="15%" left="25%" zindex="-1" animation={animationFramesOne} animatinoOptions="20s linear infinte">
 				<img src={require("../../images/shape4.svg")} alt="shape"/>
-			</div>
-			<div className="shape8 rotateme">
+			</Shape>
+			<Shape top="15%" right="10%" zindex="-1" animation={rotateme} animatinoOptions="20s linear infinite">
 				<img src={require("../../images/shape2.svg")} alt="shape"/>
-			</div>
+			</Shape>
 		</MainBannerContainer>
-    </BootstrapProvider>
     )
 }
 

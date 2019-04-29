@@ -110,15 +110,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_reveal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_reveal__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bootstrap-styled/provider/lib/BootstrapProvider */ "@bootstrap-styled/provider/lib/BootstrapProvider");
-/* harmony import */ var _bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bootstrap-styled/v4 */ "@bootstrap-styled/v4");
-/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bootstrap-styled/v4 */ "@bootstrap-styled/v4");
+/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/home/liar/Documents/remori/components/home-one/MainBanner.js";
 
- // import '../../assets/css/animate.css'
-// import { Wobble,  } from 'animate-css-styled-components';
-
+ // import { Wobble,  } from 'animate-css-styled-components';
 
 
 
@@ -126,19 +122,19 @@ var _jsxFileName = "/home/liar/Documents/remori/components/home-one/MainBanner.j
 var MainBannerContainer = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__MainBannerContainer",
   componentId: "sdoueq-0"
-})(["position:relative;height:910px;z-index:1;background:transparent url('../../images/banner-bg1.jpg') right top no-repeat;"]);
+})(["position:relative;height:910px;z-index:1;background:transparent url('../../images/banner-bg1.jpg') right top no-repeat;.d-table{width:100%;eight:100%;}.d-table.cell{vertical-align:middle;}@media only screen and (max-width:767px){height:100%;padding-top:150px;padding-bottom:80px;background-position:center;}"]);
 var HeroContent = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__HeroContent",
   componentId: "sdoueq-1"
-})(["h1{font-size:45px;font-weight:500;margin-bottom:20px;}p{margin-bottom:30px;}"]);
+})(["h1{font-size:45px;font-weight:500;margin-bottom:20px;}p{margin-bottom:30px;}@media only screen and (max-width:767px){margin-bottom:45px;h1{font-size:25px;line-height:30px;margin-bottom:15px;}}"]);
 var BannerImage = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__BannerImage",
   componentId: "sdoueq-2"
-})(["position:relative;"]);
+})(["position:relative;@media only screen and (max-width:767px){text-align:center;}"]);
 var BannerInnerImage = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.img.withConfig({
   displayName: "MainBanner__BannerInnerImage",
   componentId: "sdoueq-3"
-})(["position:absolute;z-index:", ";top:", ";left:", ";right:", ";display:", ";"], function (props) {
+})(["position:absolute;z-index:", ";top:", ";left:", ";right:", ";display:", ";@media only screen and (max-width:767px){display:none;position:relative;}"], function (props) {
   return props.zindex;
 }, function (props) {
   return props.top;
@@ -151,109 +147,117 @@ var BannerInnerImage = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.
 }); // Create the keyframes
 
 var rotate3d = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);}"]);
+var movebounce = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["0%{-webkit-transform:translateY(0px);transform:translateY(0px);}50%{-webkit-transform:translateY(20px);transform:translateY(20px);}100%{-webkit-transform:translateY(0px);transform:translateY(0px);}"]);
+var moveleftbounce = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["0%{-webkit-transform:translateX(0px);transform:translateX(0px);}50%{-webkit-transform:translateX(20px);transform:translateX(20px);}100%{-webkit-transform:translateX(0px);transform:translateX(0px);}"]);
+var rotateme = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}"]);
+var animationFramesOne = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["keyframes"])(["0%{-webkit-transform:translate(0px,0px) rotate(0deg);transform:translate(0px,0px) rotate(0deg);}20%{-webkit-transform:translate(73px,-1px) rotate(36deg);transform:translate(73px,-1px) rotate(36deg);}40%{-webkit-transform:translate(141px,72px) rotate(72deg);transform:translate(141px,72px) rotate(72deg);}60%{-webkit-transform:translate(83px,122px) rotate(108deg);transform:translate(83px,122px) rotate(108deg);}80%{-webkit-transform:translate(-40px,72px) rotate(144deg);transform:translate(-40px,72px) rotate(144deg);}100%{-webkit-transform:translate(0px,0px) rotate(0deg);transform:translate(0px,0px) rotate(0deg);}"]);
 var Shape = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__Shape",
   componentId: "sdoueq-4"
-})(["position:absolute;z-index:-1;-webkit-animation:", ";animation:", ";opacity:", ";"], function (props) {
-  return props.animation;
+})(["position:absolute;z-index:", ";animation:", " ", ";opacity:", ";top:", ";right:", ";left:", ";bottom:", ";"], function (props) {
+  return props.zindex;
 }, function (props) {
   return props.animation;
 }, function (props) {
-  return props.opacity || 1;
+  return props.animationOptions;
+}, function (props) {
+  return props.opacity;
+}, function (props) {
+  return props.top;
+}, function (props) {
+  return props.right;
+}, function (props) {
+  return props.left;
+}, function (props) {
+  return props.bottom;
 });
 
 var MainBanner = function MainBanner() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainBannerContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainBannerContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 174
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-table",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 175
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-table-cell",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 176
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 177
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Row"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     className: "h-100 justify-content-center align-items-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 178
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Col"], {
     lg: "5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 179
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContent, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 180
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 181
     },
     __self: this
   }, "Secure IT Solutions for a more secure environment"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 182
     },
     __self: this
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 184
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Button"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 185
     },
     __self: this
-  }, "Get Started")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+  }, "Get Started")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_4__["Col"], {
     lg: {
       size: 6,
       offset: 1
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 189
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerImage, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 190
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
@@ -261,7 +265,7 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 191
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
@@ -271,225 +275,10 @@ var MainBanner = function MainBanner() {
     left: "25px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 192
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/dot.png */ "./images/banner-image/dot.png"),
-    alt: "dot",
-    right: "20px",
-    top: "-110px",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    bottom: true,
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/keyboard.png */ "./images/banner-image/keyboard.png"),
-    alt: "keyboard",
-    top: "-28px",
-    left: "37%",
-    zindex: "1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    bottom: true,
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/flower-top-big.png */ "./images/banner-image/flower-top-big.png"),
-    alt: "flower-top-big",
-    right: "25px",
-    top: "-140px",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 115
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/table.png */ "./images/banner-image/table.png"),
-    alt: "table",
-    top: "-110px",
-    left: "90px",
-    zindex: "1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 131
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/bin.png */ "./images/banner-image/bin.png"),
-    alt: "bin",
-    top: "118px",
-    right: "12%",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/pen.png */ "./images/banner-image/pen.png"),
-    alt: "pen",
-    top: "-160px",
-    left: "37%",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Bounce"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/book.png */ "./images/banner-image/book.png"),
-    alt: "book",
-    top: "-120px",
-    left: "28%",
-    zindex: "2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 148
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    top: true,
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 156
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/dekstop.png */ "./images/banner-image/dekstop.png"),
-    alt: "dekstop",
-    top: "-150px",
-    right: "35%",
-    zindex: "1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 157
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Rotate"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 165
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/flower-top.png */ "./images/banner-image/flower-top.png"),
-    alt: "flower-top",
-    top: "-35px",
-    right: "30%",
-    zindex: "1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 166
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    right: true,
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 174
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/tea-cup.png */ "./images/banner-image/tea-cup.png"),
-    alt: "tea-cup",
-    top: "-25px",
-    left: "56%",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Roll"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 182
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/headphone.png */ "./images/banner-image/headphone.png"),
-    alt: "headphone",
-    top: "-28px",
-    right: "105px",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 183
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    delay: 5000,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 190
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/main-pic.png */ "./images/banner-image/main-pic.png"),
-    alt: "main-pic",
-    top: "-28px",
-    right: "105px",
-    display: "none",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 191
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    top: true,
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
@@ -497,11 +286,10 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
-    src: __webpack_require__(/*! ../../images/banner-image/man.png */ "./images/banner-image/man.png"),
-    alt: "man",
-    top: "-130px",
-    left: "-45px",
-    zindex: "3",
+    src: __webpack_require__(/*! ../../images/banner-image/dot.png */ "./images/banner-image/dot.png"),
+    alt: "dot",
+    right: "20px",
+    top: "-110px",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 200
@@ -512,7 +300,224 @@ var MainBanner = function MainBanner() {
     delay: 5000,
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 207
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/keyboard.png */ "./images/banner-image/keyboard.png"),
+    alt: "keyboard",
+    top: "-28px",
+    left: "37%",
+    zindex: "1",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 208
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/table.png */ "./images/banner-image/table.png"),
+    alt: "table",
+    top: "-110px",
+    left: "90px",
+    zindex: "1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    bottom: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 225
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/flower-top-big.png */ "./images/banner-image/flower-top-big.png"),
+    alt: "flower-top-big",
+    right: "25px",
+    top: "-140px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 233
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/bin.png */ "./images/banner-image/bin.png"),
+    alt: "bin",
+    top: "118px",
+    right: "12%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 234
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 241
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/pen.png */ "./images/banner-image/pen.png"),
+    alt: "pen",
+    top: "-160px",
+    left: "37%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 242
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Bounce"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 249
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/book.png */ "./images/banner-image/book.png"),
+    alt: "book",
+    top: "-120px",
+    left: "28%",
+    zindex: "2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 250
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    top: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 258
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/dekstop.png */ "./images/banner-image/dekstop.png"),
+    alt: "dekstop",
+    top: "-150px",
+    right: "35%",
+    zindex: "1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 259
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Rotate"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 267
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/flower-top.png */ "./images/banner-image/flower-top.png"),
+    alt: "flower-top",
+    top: "-35px",
+    right: "30%",
+    zindex: "1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 268
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    right: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 276
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/tea-cup.png */ "./images/banner-image/tea-cup.png"),
+    alt: "tea-cup",
+    top: "-25px",
+    left: "56%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 277
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Roll"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/headphone.png */ "./images/banner-image/headphone.png"),
+    alt: "headphone",
+    top: "-28px",
+    right: "105px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 285
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 292
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/main-pic.png */ "./images/banner-image/main-pic.png"),
+    alt: "main-pic",
+    className: "main-pic",
+    top: "-28px",
+    right: "105px",
+    display: "none",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 293
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    top: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 302
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
+    src: __webpack_require__(/*! ../../images/banner-image/man.png */ "./images/banner-image/man.png"),
+    alt: "man",
+    top: "-130px",
+    left: "-45px",
+    zindex: "3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 303
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
+    bottom: true,
+    delay: 5000,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 311
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BannerInnerImage, {
@@ -521,17 +526,18 @@ var MainBanner = function MainBanner() {
     top: "-287px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209
+      lineNumber: 312
     },
     __self: this
   })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
     left: "30px",
     top: "20%",
     opacity: ".4",
-    animation: "rotate3d 4s linear infinite",
+    animation: rotate3d,
+    animationOptions: "4s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223
+      lineNumber: 326
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -539,14 +545,18 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 224
+      lineNumber: 327
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape2 rotateme",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    left: "15%",
+    top: "60%",
+    zindex: "-1",
+    animation: rotateme,
+    animationOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 329
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -554,14 +564,17 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 330
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape3",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    left: "25%",
+    bottom: "15%",
+    animation: animationFramesOne,
+    animationOptions: "15s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229
+      lineNumber: 332
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -569,14 +582,18 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230
+      lineNumber: 333
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape4",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    right: "25%",
+    bottom: "15%",
+    zindex: "-1",
+    animation: animationFramesOne,
+    animationOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232
+      lineNumber: 335
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -584,14 +601,19 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233
+      lineNumber: 336
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape5",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    right: "5%",
+    top: "10%",
+    zindex: "-1",
+    opacity: ".2",
+    animation: movebounce,
+    animationOptions: "5s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235
+      lineNumber: 338
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -599,29 +621,18 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236
+      lineNumber: 339
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape6 rotateme",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    top: "40%",
+    right: "10%",
+    zindex: "-1",
+    animation: rotateme,
+    animationOptions: "20s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 238
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../images/shape4.svg */ "./images/shape4.svg"),
-    alt: "shape",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 239
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape7",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 241
+      lineNumber: 341
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -629,14 +640,37 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 242
+      lineNumber: 342
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "shape8 rotateme",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    top: "15%",
+    left: "25%",
+    zindex: "-1",
+    animation: animationFramesOne,
+    animatinoOptions: "20s linear infinte",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 244
+      lineNumber: 344
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../images/shape4.svg */ "./images/shape4.svg"),
+    alt: "shape",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 345
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+    top: "15%",
+    right: "10%",
+    zindex: "-1",
+    animation: rotateme,
+    animatinoOptions: "20s linear infinite",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 347
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -644,10 +678,10 @@ var MainBanner = function MainBanner() {
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 245
+      lineNumber: 348
     },
     __self: this
-  }))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MainBanner);
@@ -1470,17 +1504,6 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1.withConf
 
 module.exports = __webpack_require__(/*! /home/liar/Documents/remori/pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "@bootstrap-styled/provider/lib/BootstrapProvider":
-/*!*******************************************************************!*\
-  !*** external "@bootstrap-styled/provider/lib/BootstrapProvider" ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@bootstrap-styled/provider/lib/BootstrapProvider");
 
 /***/ }),
 

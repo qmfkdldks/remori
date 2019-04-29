@@ -1,5 +1,6 @@
-import Document from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
@@ -25,5 +26,23 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal()
     }
+  }
+
+  render() {
+    return (
+        <Html lang="en">
+            <Head>
+                {/* <meta charSet="utf-8" /> */}
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                <link rel="icon" type="image/png" href={require("../images/favicon.png")}></link>
+            </Head>
+            <body>
+              <BootstrapProvider>
+                <Main />
+                <NextScript />
+              </BootstrapProvider>
+            </body>
+        </Html>
+    )
   }
 }

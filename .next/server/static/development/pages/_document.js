@@ -88,10 +88,21 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./images/favicon.png":
+/*!****************************!*\
+  !*** ./images/favicon.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js":
 /*!*****************************************************************!*\
@@ -2286,6 +2297,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @bootstrap-styled/provider/lib/BootstrapProvider */ "@bootstrap-styled/provider/lib/BootstrapProvider");
+/* harmony import */ var _bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -2296,6 +2309,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/liar/Documents/remori/pages/_document.js";
+
 
 
 
@@ -2311,7 +2325,66 @@ function (_Document) {
     return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(MyDocument).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(MyDocument, null, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(MyDocument, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Html"], {
+        lang: "en",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Head"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, shrink-to-fit=no",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: __webpack_require__(/*! ../images/favicon.png */ "./images/favicon.png"),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }))));
+    }
+  }], [{
     key: "getInitialProps",
     value: function () {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__["default"])(
@@ -2333,7 +2406,7 @@ function (_Document) {
                         return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 12
+                            lineNumber: 13
                           },
                           __self: this
                         })));
@@ -2379,7 +2452,7 @@ function (_Document) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*********************************************!*\
   !*** multi private-next-pages/_document.js ***!
   \*********************************************/
@@ -2388,6 +2461,17 @@ function (_Document) {
 
 module.exports = __webpack_require__(/*! private-next-pages/_document.js */"./pages/_document.js");
 
+
+/***/ }),
+
+/***/ "@bootstrap-styled/provider/lib/BootstrapProvider":
+/*!*******************************************************************!*\
+  !*** external "@bootstrap-styled/provider/lib/BootstrapProvider" ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@bootstrap-styled/provider/lib/BootstrapProvider");
 
 /***/ }),
 
