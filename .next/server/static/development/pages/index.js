@@ -233,7 +233,6 @@ var MainBanner = function MainBanner() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     left: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 445
@@ -249,7 +248,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 452
@@ -266,7 +264,6 @@ var MainBanner = function MainBanner() {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     bottom: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 459
@@ -282,7 +279,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 466
@@ -298,7 +294,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 473
@@ -314,7 +309,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Bounce"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 480
@@ -331,7 +325,6 @@ var MainBanner = function MainBanner() {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     top: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 487
@@ -348,7 +341,6 @@ var MainBanner = function MainBanner() {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     bottom: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 494
@@ -364,7 +356,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Zoom"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 501
@@ -381,7 +372,6 @@ var MainBanner = function MainBanner() {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     top: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 508
@@ -397,7 +387,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Rotate"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 515
@@ -414,7 +403,6 @@ var MainBanner = function MainBanner() {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     right: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 522
@@ -430,7 +418,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Roll"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 529
@@ -446,7 +433,6 @@ var MainBanner = function MainBanner() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 536
@@ -464,7 +450,6 @@ var MainBanner = function MainBanner() {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_reveal__WEBPACK_IMPORTED_MODULE_2__["Fade"], {
     bottom: true,
-    delay: 5000,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 544

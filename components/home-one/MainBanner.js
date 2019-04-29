@@ -442,98 +442,98 @@ const MainBanner = () => {
 							</Col>
 							<Col lg={{ size: 6, offset: 1 }}>
 								<BannerImage>
-                                    <Fade left delay={5000}>
+                                    <Fade left>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/carpet.png")}                                                                                         
                                             alt="carpet"
                                             className="carpet"
                                         />
                                     </Fade>
-                                    <Zoom delay={5000}>
+                                    <Zoom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/dot.png")}
                                             alt="dot"
                                             className="dot"
                                         />
                                     </Zoom>
-                                    <Fade bottom delay={5000}>
+                                    <Fade bottom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/keyboard.png")} 
                                             alt="keyboard"
                                             className="keyboard"
                                         />
                                     </Fade>
-                                    <Zoom delay={5000}>
+                                    <Zoom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/table.png")} 
                                             alt="table"
                                             className="table"
                                         />
                                     </Zoom>
-                                    <Zoom delay={5000}>
+                                    <Zoom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/pen.png")} 
                                             alt="pen"
                                             className="pen"
                                         />
                                     </Zoom>
-                                    <Bounce delay={5000}>
+                                    <Bounce>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/book.png")} 
                                             alt="book"
                                             className="book"
                                         />
                                     </Bounce>
-                                    <Fade top delay={5000}>
+                                    <Fade top>
                                         <BannerInnerImage
                                             src={require('../../images/banner-image/man.png')}  
                                             alt="man"
                                             className="man"
                                         />
                                     </Fade>
-                                    <Fade bottom delay={5000}>
+                                    <Fade bottom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/flower-top-big.png")} 
                                             alt="flower-top-big"
                                             className="flower-top-big"
                                         />
                                     </Fade>
-                                    <Zoom delay={5000}>
+                                    <Zoom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/bin.png")}                                                                                         
                                             alt="bin"
                                             className="bin"
                                         />
                                     </Zoom>
-                                    <Fade top delay={5000}>
+                                    <Fade top>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/dekstop.png")} 
                                             alt="dekstop"
                                             className="desktop"
                                         />
                                     </Fade>
-                                    <Rotate delay={5000}>
+                                    <Rotate>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/flower-top.png")} 
                                             alt="flower-top"
                                             className="flower-top"
                                         />
                                     </Rotate>
-                                    <Fade right delay={5000}>
+                                    <Fade right>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/tea-cup.png")} 
                                             alt="tea-cup"
                                             className="tea-cup"
                                         />
                                     </Fade>
-                                    <Roll delay={5000}>
+                                    <Roll>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/headphone.png")} 
                                             alt="headphone"
                                             className="headphone"
                                         />
                                     </Roll>
-                                    <Fade delay={5000}>
+                                    <Fade>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/main-pic.png")} 
                                             alt="main-pic"
@@ -541,7 +541,7 @@ const MainBanner = () => {
                                             display="none"
                                         />
                                     </Fade>
-                                    <Fade bottom delay={5000}>
+                                    <Fade bottom>
                                         <BannerInnerImage 
                                             src={require("../../images/banner-image/code.png")}
                                             className="code"
