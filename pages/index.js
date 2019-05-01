@@ -9,7 +9,7 @@ class Index extends React.Component {
       <React.Fragment>
         <MainBanner />
         <BoxArea />
-        <ServicesArea />
+        {/* <ServicesArea /> */}
       </React.Fragment>
       )
   }

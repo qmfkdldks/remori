@@ -1,6 +1,6 @@
 import React from 'react'
-import * as Icon from 'react-feather';
-import ReactWOW from 'react-wow'
+// import * as Icon from 'react-feather';
+// import ReactWOW from 'react-wow'
 
 class ServicesArea extends React.Component {
     render() {
