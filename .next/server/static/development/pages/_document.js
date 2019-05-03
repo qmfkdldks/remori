@@ -2297,8 +2297,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @bootstrap-styled/provider/lib/BootstrapProvider */ "@bootstrap-styled/provider/lib/BootstrapProvider");
-/* harmony import */ var _bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -2309,7 +2307,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/liar/Documents/remori/pages/_document.js";
-
 
 
 
@@ -2337,13 +2334,13 @@ function (_Document) {
         lang: "en",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("meta", {
@@ -2351,7 +2348,7 @@ function (_Document) {
         content: "width=device-width, initial-scale=1, shrink-to-fit=no",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
@@ -2360,31 +2357,25 @@ function (_Document) {
         href: __webpack_require__(/*! ../images/favicon.png */ "./images/favicon.png"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 49
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Body, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_bootstrap_styled_provider_lib_BootstrapProvider__WEBPACK_IMPORTED_MODULE_12___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 52
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 53
         },
         __self: this
       })));
@@ -2411,7 +2402,7 @@ function (_Document) {
                         return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 25
+                            lineNumber: 24
                           },
                           __self: this
                         })));
@@ -2466,17 +2457,6 @@ function (_Document) {
 
 module.exports = __webpack_require__(/*! private-next-pages/_document.js */"./pages/_document.js");
 
-
-/***/ }),
-
-/***/ "@bootstrap-styled/provider/lib/BootstrapProvider":
-/*!*******************************************************************!*\
-  !*** external "@bootstrap-styled/provider/lib/BootstrapProvider" ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@bootstrap-styled/provider/lib/BootstrapProvider");
 
 /***/ }),
 

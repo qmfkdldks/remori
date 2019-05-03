@@ -1,7 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
-import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import styled from 'styled-components';
 
 const Body = styled.body`
@@ -50,9 +49,7 @@ export default class MyDocument extends Document {
                 <link rel="icon" type="image/png" href={require("../images/favicon.png")}></link>
             </Head>
             <Body>
-              <BootstrapProvider>
-                <Main />
-              </BootstrapProvider>  
+              <Main />
               <NextScript />     
             </Body>
         </Html>

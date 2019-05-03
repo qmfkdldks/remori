@@ -6,42 +6,35 @@ import styled from 'styled-components';
 import {  Rotate3d, MoveBounce, RotateMe, AnimationFramesOne } from '../animations/keyframes'
 
 import {
-    Row,
-    Col,
-    Container,
-    Button
-  } from '@bootstrap-styled/v4';
+  Box,
+  Card,
+  Image,
+  Heading,
+  Text,
+  Button,
+  Flex
+} from 'rebass'
+
+import img from '../../images/banner-bg1.jpg';
 
 const MainBannerContainer = styled.div`
 position: relative;
-height: 910px;
+padding-top: 100px;
+height: 510px;
 z-index: 1;
-background: transparent url('../../images/banner-bg1.jpg') right top no-repeat;
-
-.d-table {
-    width: 100%;
-    height: 100%;
-}
-
-.d-table.cell {
-    vertical-align: middle;
-}
+background: transparent url(${img}) right top no-repeat;
 
 @media only screen and (max-width: 767px) {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 80px;
     background-position: center;   
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     height: 100%;
-    padding-top: 185px;
+    padding-top: 85px;
     padding-bottom: 165px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
 }
 `;
 
@@ -55,30 +48,6 @@ h1 {
   p {
     margin-bottom: 30px;
   }
-
-  @media only screen and (max-width: 767px) {
-    margin-bottom: 45px;
-
-    h1 {
-        font-size: 25px;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    h1 {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    h1 {
-        font-size: 35px;
- }
-}
 `
 
 const Shape = styled.div`
@@ -157,52 +126,46 @@ animation: ${props => props.animation} ${props => props.animationOptions};
 const MainBanner = () => {
     return (
 		<MainBannerContainer>
-			<div className="d-table">
-				<div className="d-table-cell">
-					<Container>
-						<Row className="h-100 justify-content-center align-items-center">
-							<Col lg="5">
+					<Flex flexWrap="wrap" alignItems="center" justifyContent="center">
+							<Box p={3} px={[3, 5]} width={[1, 1, 1/2]}>
 								<HeroContent>
-									<h1>Remori is IT Startup environment for a more success & failure </h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
+									<Heading>Remori is IT Startup environment for a more success & failure </Heading>
+									<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</Text>
 									
 									{/* <Link href="#"> */}
-                                    <StyledButton>Get Started</StyledButton>
+                    <StyledButton>Get Started</StyledButton>
 									{/* </Link> */}
 								</HeroContent>
-							</Col>
-							<Col lg={{ size: 6, offset: 1 }}>
+							</Box>
+							<Box p={3} mw={3} width={[1, 1, 1/2]}>
 								<Worker/>
-							</Col>
-						</Row>
-					</Container>
-				</div>
-			</div>
+							</Box>
+					</Flex>
             
 
 			<Shape className="shape1" animation={Rotate3d} animationOptions="4s linear infinite">
-				<img src={require("../../images/shape1.png")} alt="shape"/>
+				<Image src={require("../../images/shape1.png")} alt="shape"/>
 			</Shape>
 			<Shape className="shape2" animation={RotateMe} animationOptions="5s linear infinite">
-				<img src={require("../../images/shape2.svg")} alt="shape"/>
+				<Image src={require("../../images/shape2.svg")} alt="shape"/>
 			</Shape>
 			<Shape className="shape3" animation={AnimationFramesOne} animationOptions="15s infinite linear">
-				<img src={require("../../images/shape3.svg")} alt="shape"/>
+				<Image src={require("../../images/shape3.svg")} alt="shape"/>
 			</Shape>
 			<Shape className="shape4" animation={AnimationFramesOne} animationOptions="20s infinite linear">
-				<img src={require("../../images/shape4.svg")} alt="shape"/>
+				<Image src={require("../../images/shape4.svg")} alt="shape"/>
 			</Shape>
 			<Shape className="shape5" animation={MoveBounce} animationOptions="5s linear infinite">
-				<img src={require("../../images/shape5.png")} alt="shape"/>
+				<Image src={require("../../images/shape5.png")} alt="shape"/>
 			</Shape>
 			<Shape className="shape6" animation={RotateMe} animationOptions="10s linear infinite">
-				<img src={require("../../images/shape4.svg")} alt="shape"/>
+				<Image src={require("../../images/shape4.svg")} alt="shape"/>
 			</Shape>
 			<Shape className="shape7" animation={AnimationFramesOne} animationOptions="20s infinite linear">
-				<img src={require("../../images/shape4.svg")} alt="shape"/>
+				<Image src={require("../../images/shape4.svg")} alt="shape"/>
 			</Shape>
 			<Shape className="shape8" animation={RotateMe} animationOptions="10s linear infinite">
-				<img src={require("../../images/shape2.svg")} alt="shape"/>
+				<Image src={require("../../images/shape2.svg")} alt="shape"/>
 			</Shape>
 		</MainBannerContainer>
     )

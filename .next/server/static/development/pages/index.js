@@ -427,8 +427,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _atomic_IconBox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../atomic/IconBox */ "./components/atomic/IconBox.js");
-/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bootstrap-styled/v4 */ "@bootstrap-styled/v4");
-/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/home/liar/Documents/remori/components/home-one/BoxArea.js";
  // import * as Icon from 'react-feather'
 
@@ -441,160 +441,150 @@ var BoxAreaContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.
 })(["position:relative;padding-bottom:80px;margin-top:-130px;z-index:1;@media only screen and (max-width:767px){margin-top:0;padding-bottom:20px;}@media only screen and (min-width:768px) and (max-width:991px){padding-bottom:50px;margin-top:-65px;}"]);
 
 var BoxArea = function BoxArea(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BoxAreaContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    lg: "3",
-    md: "6",
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Flex"], {
+    flexWrap: "wrap",
+    justifyContent: "space-around",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atomic_IconBox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    width: [1, 1 / 2, 1 / 4],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atomic_IconBox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, "Code Security"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
-  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    lg: "3",
-    md: "6",
+  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    width: [1, 1 / 2, 1 / 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atomic_IconBox__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "bg-f78acb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }, "Code Security"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
-  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    lg: "3",
-    md: "6",
+  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    width: [1, 1 / 2, 1 / 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atomic_IconBox__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "bg-c679e3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 57
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }, "Team Management"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
-  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    lg: "3",
-    md: "6",
+  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    width: [1, 1 / 2, 1 / 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atomic_IconBox__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "bg-eb6b3d",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 70
     },
     __self: this
   }, "Access Controlled"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
-  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))))));
+  }, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BoxArea);
@@ -618,9 +608,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _animations_keyframes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../animations/keyframes */ "./components/animations/keyframes.js");
-/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bootstrap-styled/v4 */ "@bootstrap-styled/v4");
-/* harmony import */ var _bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_banner_bg1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/banner-bg1.jpg */ "./images/banner-bg1.jpg");
+/* harmony import */ var _images_banner_bg1_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_banner_bg1_jpg__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "/home/liar/Documents/remori/components/home-one/MainBanner.js";
+
 
 
 
@@ -630,11 +623,11 @@ var _jsxFileName = "/home/liar/Documents/remori/components/home-one/MainBanner.j
 var MainBannerContainer = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__MainBannerContainer",
   componentId: "sdoueq-0"
-})(["position:relative;height:910px;z-index:1;background:transparent url('../../images/banner-bg1.jpg') right top no-repeat;.d-table{width:100%;height:100%;}.d-table.cell{vertical-align:middle;}@media only screen and (max-width:767px){height:100%;padding-top:150px;padding-bottom:80px;background-position:center;}@media only screen and (min-width:768px) and (max-width:991px){height:100%;padding-top:185px;padding-bottom:165px;}@media only screen and (min-width:992px) and (max-width:1199px){}"]);
+})(["position:relative;padding-top:100px;height:510px;z-index:1;background:transparent url(", ") right top no-repeat;@media only screen and (max-width:767px){height:100%;padding-top:50px;padding-bottom:80px;background-position:center;}@media only screen and (min-width:768px) and (max-width:991px){height:100%;padding-top:85px;padding-bottom:165px;}"], _images_banner_bg1_jpg__WEBPACK_IMPORTED_MODULE_6___default.a);
 var HeroContent = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__HeroContent",
   componentId: "sdoueq-1"
-})(["h1{font-size:45px;font-weight:500;margin-bottom:20px;}p{margin-bottom:30px;}@media only screen and (max-width:767px){margin-bottom:45px;h1{font-size:25px;line-height:30px;margin-bottom:15px;}}@media only screen and (min-width:768px) and (max-width:991px){h1{font-size:30px;margin-bottom:15px;}}@media only screen and (min-width:992px) and (max-width:1199px){h1{font-size:35px;}}"]);
+})(["h1{font-size:45px;font-weight:500;margin-bottom:20px;}p{margin-bottom:30px;}"]);
 var Shape = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "MainBanner__Shape",
   componentId: "sdoueq-2"
@@ -648,98 +641,81 @@ var MainBanner = function MainBanner() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainBannerContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 128
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-table",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Flex"], {
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160
+      lineNumber: 129
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-table-cell",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+    p: 3,
+    px: [3, 5],
+    width: [1, 1, 1 / 2],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 162
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Row"], {
-    className: "h-100 justify-content-center align-items-center",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 163
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-    lg: "5",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 130
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContent, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 131
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Heading"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 132
     },
     __self: this
-  }, "Remori is IT Startup environment for a more success & failure "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Remori is IT Startup environment for a more success & failure "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Text"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 133
     },
     __self: this
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 136
     },
     __self: this
-  }, "Get Started"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-    lg: {
-      size: 6,
-      offset: 1
-    },
+  }, "Get Started"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+    p: 3,
+    mw: 3,
+    width: [1, 1, 1 / 2],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 140
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_animations_Worker__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 141
     },
     __self: this
-  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
     className: "shape1",
     animation: _animations_keyframes__WEBPACK_IMPORTED_MODULE_4__["Rotate3d"],
     animationOptions: "4s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183
+      lineNumber: 146
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape1.png */ "./images/shape1.png"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184
+      lineNumber: 147
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -748,15 +724,15 @@ var MainBanner = function MainBanner() {
     animationOptions: "5s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186
+      lineNumber: 149
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape2.svg */ "./images/shape2.svg"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187
+      lineNumber: 150
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -765,15 +741,15 @@ var MainBanner = function MainBanner() {
     animationOptions: "15s infinite linear",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 152
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape3.svg */ "./images/shape3.svg"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 153
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -782,15 +758,15 @@ var MainBanner = function MainBanner() {
     animationOptions: "20s infinite linear",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192
+      lineNumber: 155
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape4.svg */ "./images/shape4.svg"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193
+      lineNumber: 156
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -799,15 +775,15 @@ var MainBanner = function MainBanner() {
     animationOptions: "5s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 195
+      lineNumber: 158
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape5.png */ "./images/shape5.png"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196
+      lineNumber: 159
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -816,15 +792,15 @@ var MainBanner = function MainBanner() {
     animationOptions: "10s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198
+      lineNumber: 161
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape4.svg */ "./images/shape4.svg"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199
+      lineNumber: 162
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -833,15 +809,15 @@ var MainBanner = function MainBanner() {
     animationOptions: "20s infinite linear",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 201
+      lineNumber: 164
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape4.svg */ "./images/shape4.svg"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202
+      lineNumber: 165
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shape, {
@@ -850,21 +826,21 @@ var MainBanner = function MainBanner() {
     animationOptions: "10s linear infinite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204
+      lineNumber: 167
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_5__["Image"], {
     src: __webpack_require__(/*! ../../images/shape2.svg */ "./images/shape2.svg"),
     alt: "shape",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 168
     },
     __self: this
   })));
 };
 
-var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_3___default()(_bootstrap_styled_v4__WEBPACK_IMPORTED_MODULE_5__["Button"]).withConfig({
+var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_3___default()(rebass__WEBPACK_IMPORTED_MODULE_5__["Button"]).withConfig({
   displayName: "MainBanner__StyledButton",
   componentId: "sdoueq-3"
 })(["font-weight:600;font-size:14px;border:none;padding:15px 40px;position:relative;border-radius:4px;z-index:1;text-transform:uppercase;-webkit-transition:0.5s;transition:0.5s;"]);
@@ -2094,6 +2070,17 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (ServicesArea);
+
+/***/ }),
+
+/***/ "./images/banner-bg1.jpg":
+/*!*******************************!*\
+  !*** ./images/banner-bg1.jpg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/banner-bg1-c8e7f324943288541bc1cbb21e1f7c19.jpg";
 
 /***/ }),
 
@@ -3441,17 +3428,6 @@ module.exports = __webpack_require__(/*! /home/liar/Documents/remori/pages/index
 
 /***/ }),
 
-/***/ "@bootstrap-styled/v4":
-/*!***************************************!*\
-  !*** external "@bootstrap-styled/v4" ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@bootstrap-styled/v4");
-
-/***/ }),
-
 /***/ "core-js/library/fn/json/stringify":
 /*!****************************************************!*\
   !*** external "core-js/library/fn/json/stringify" ***!
@@ -3592,6 +3568,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-reveal");
+
+/***/ }),
+
+/***/ "rebass":
+/*!*************************!*\
+  !*** external "rebass" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("rebass");
 
 /***/ }),
 
