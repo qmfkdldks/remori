@@ -1,5 +1,5 @@
 import App, {Container} from 'next/app'
-import Head from 'next/head'
+// import Head from 'next/head'
 import React from 'react'
 
 export default class MyApp extends App {
@@ -18,9 +18,6 @@ export default class MyApp extends App {
 
         return (
             <Container>
-                <Head>
-                    <title>Remori - Startup Platform</title>
-                </Head>
                 <Component {...pageProps} />
             </Container>
         )

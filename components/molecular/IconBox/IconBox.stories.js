@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import IconBox from './IconBox'
+import IconBox from './index'
 
 import {
 	Row,
@@ -16,13 +16,7 @@ import {
 storiesOf('IconBox', module)
 	.add('Empty', () => <IconBox />)
 	.add('Default', () => (
-		<IconBox>
-			<div className="icon">
-
-			</div>
-			<h3>Head</h3>
-			<p>Body</p>
-		</IconBox>
+		<IconBox />
 	))
 	.add('Colored', () => (
 		<Container>
@@ -37,7 +31,7 @@ storiesOf('IconBox', module)
 					</IconBox>
 				</Col>
 				<Col>
-				<IconBox>
+					<IconBox>
 						<div className="icon">
 							{/* <Icon.Code /> */}
 						</div>

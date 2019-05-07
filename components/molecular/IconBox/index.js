@@ -23,14 +23,15 @@ transition: 0.5s;
 	color: #44ce6f;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
+		* {
+			vertical-align: middle;
+		}
   }
   
-   h3 {
+  .heading {
 	font-size: 18px;
 	margin-top: 25px;
 	margin-bottom: 15px;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
   }
   
   ::before {
@@ -45,11 +46,6 @@ transition: 0.5s;
 	z-index: -1;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-  }
-  
-   p {
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
   }
@@ -97,8 +93,10 @@ transition: 0.5s;
 	color: #44ce6f;
   }
   
-  :hover h3, :hover p {
-	color: #ffffff;
+  :hover :not(.img) {
+	color: #ffffff;	
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
   }
   
   :hover.bg-f78acb .icon {

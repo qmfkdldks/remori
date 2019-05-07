@@ -1,20 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheet, createGlobalStyle, ThemeProvider } from 'styled-components';
+import theme from './_theme'
 
-import styled from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
-const Body = styled.body`
-padding: 0;
-margin: 0;
-font-size: 14px;
-
-*, ::after, ::before {
-  box-sizing: border-box;
+body {
+  padding: 0;
+  margin: 0;  
+  font-family: 'Poppins', 'sans-serif';
 }
 `
 
 export default class MyDocument extends Document {
-  static async getInitialProps (ctx) {
+  static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
@@ -41,19 +40,22 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      
-        <Html lang="en">
-            <Head>
-                {/* <meta charSet="utf-8" /> */}
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <link rel="icon" type="image/png" href={require("../images/favicon.png")}></link>
-            </Head>
-            <Body>
-              <Main />
-              <NextScript />     
-            </Body>
-        </Html>
-        
+      <Html lang="en">
+        <Head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <link rel="icon" type="image/png" href={require("../images/favicon.png")}></link>
+        </Head>
+
+        <ThemeProvider theme={theme}>
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </ThemeProvider>
+        <GlobalStyle />
+      </Html>
+
     )
   }
 }

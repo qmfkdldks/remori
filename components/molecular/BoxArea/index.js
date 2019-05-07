@@ -1,7 +1,7 @@
 import React from 'react'
-// import * as Icon from 'react-feather'
+import * as Icon from 'react-feather'
 import styled from 'styled-components'
-import IconBox from '../atomic/IconBox'
+import IconBox from '../IconBox'
 
 	import {
 		Box,
@@ -35,10 +35,10 @@ const BoxArea = (props) => {
 					<Box p={3} width={[ 1, 1/2, 1/4 ]}>
 						<IconBox>
 							<div className="icon">
-                                {/* <Icon.Code /> */}
+                                <Icon.Code />
 							</div>
-							<h3>Code Security</h3>
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+							<Heading>Code</Heading>
+							<Text>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</Text>
 						</IconBox>
 					</Box>
 
@@ -47,8 +47,8 @@ const BoxArea = (props) => {
 							<div className="icon">
                                 {/* <Icon.Code /> */}
 							</div>
-							<h3>Code Security</h3>
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+							<Heading>Code Security</Heading>
+							<Text>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</Text>
 						</IconBox>
 					</Box>
 
@@ -57,8 +57,8 @@ const BoxArea = (props) => {
 							<div className="icon">
                                 {/* <Icon.Users /> */}
 							</div>
-							<h3>Team Management</h3>
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+							<Heading>Team Management</Heading>
+							<Text>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</Text>
 						</IconBox>
 					</Box>
 
@@ -67,8 +67,8 @@ const BoxArea = (props) => {
 							<div className="icon">
                                 {/* <Icon.GitBranch /> */}
 							</div>
-							<h3>Access Controlled</h3>
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+							<Heading>Access Controlled</Heading>
+							<Text>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</Text>
 						</IconBox>
 					</Box>
 				</Flex>
