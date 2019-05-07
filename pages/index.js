@@ -7,7 +7,6 @@ class Index extends React.Component {
   render() {
       return (
       <React.Fragment>
-        <h1></h1>
         <MainBanner />
         <BoxArea />
         {/* <ServicesArea /> */}
