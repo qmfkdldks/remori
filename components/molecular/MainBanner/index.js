@@ -2,15 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Worker from '../../animations/Worker'
 import { Rotate3d, MoveBounce, RotateMe, AnimationFramesOne } from '../../animations/keyframes'
-
-import {
-  Box,
-  Image,
-  Heading,
-  Text,
-  Button,
-  Flex
-} from 'rebass'
+import { Box, Image,Heading, Text,Button,Flex } from 'rebass'
 
 import img from '../../../images/banner-bg1.jpg';
 
@@ -139,8 +131,9 @@ const MainBanner = () => {
           {/* <HeroContent> */}
             <HeroContentHeading>Remori IT Startup Platform Argentina</HeroContentHeading>
             <HeroContentText>
+              "Data Driven Business"
               We gather and measure all business' aspects of startups to eventually accumulate experience of success and failures. 
-              Data Driven Business is the main system that we are persuing. You can join us!
+              You can join us!
             </HeroContentText>
 
             {/* <Link href="#"> */}

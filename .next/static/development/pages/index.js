@@ -147,9 +147,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _IconBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../IconBox */ "./components/molecular/IconBox/index.js");
-/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rebass */ "./node_modules/rebass/dist/index.js");
-/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rebass */ "./node_modules/rebass/dist/index.js");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _IconBox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../IconBox */ "./components/molecular/IconBox/index.js");
 
 
 
@@ -161,36 +161,45 @@ var BoxAreaContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"]
 })(["position:relative;padding-bottom:80px;margin-top:-130px;z-index:1;@media only screen and (max-width:767px){margin-top:0;padding-bottom:20px;}@media only screen and (min-width:768px) and (max-width:991px){padding-bottom:50px;margin-top:-65px;}"]);
 
 var BoxArea = function BoxArea(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Flex"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Flex"], {
+    p: [1, 3, 5],
     flexWrap: "wrap",
     justifyContent: "space-around"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     p: 3,
     width: [1, 1 / 2, 1 / 4]
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_1__["Code"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Heading"], null, "Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Text"], null, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_1__["Code"], null),
+    heading: "Code",
+    text: "Code is the most powerful tool in the world. Consult to us to bring your idea in reality."
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     p: 3,
     width: [1, 1 / 2, 1 / 4]
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "bg-f78acb"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Heading"], null, "Code Security"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Text"], null, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_1__["Layers"], null),
+    primary: "#f78acb",
+    secondary: "rgba(247, 138, 203, 0.3)",
+    heading: "Platform",
+    text: "We need foundation of our creativity. Be one of us to build success & failures foundation."
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     p: 3,
     width: [1, 1 / 2, 1 / 4]
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "bg-c679e3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Heading"], null, "Team Management"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Text"], null, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_1__["Layers"], null),
+    primary: "#c679e3",
+    secondary: "#edc3fc",
+    heading: "Connection",
+    text: "Connect potential startup partners through our network. Welcome everyone!"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     p: 3,
     width: [1, 1 / 2, 1 / 4]
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "bg-eb6b3d"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Heading"], null, "Access Controlled"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Text"], null, "Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna."))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IconBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_1__["BarChart"], null),
+    primary: "#eb6b3d",
+    secondary: "rgba(235, 107, 61, 0.3)",
+    heading: "Immense Data",
+    text: "We are collecting good quantity and quality of data to not repeat failures."
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BoxArea);
@@ -206,13 +215,60 @@ var BoxArea = function BoxArea(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ "./components/molecular/IconBox/style.js");
 
-var IconBox = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "IconBox",
-  componentId: "qiwb7l-0"
-})(["border:1px dashed #cdf1d8;padding:30px 20px;position:relative;z-index:1;border-radius:5px;background:#ffffff;-webkit-box-shadow:0 0 10px rgba(72,69,224,0.1);box-shadow:0 0 10px rgba(72,69,224,0.1);-webkit-transition:0.5s;transition:0.5s;.icon{display:inline-block;text-align:center;width:55px;height:55px;line-height:55px;background:#cdf1d8;border-radius:50%;color:#44ce6f;-webkit-transition:0.5s;transition:0.5s;*{vertical-align:middle;}}.heading{font-size:18px;margin-top:25px;margin-bottom:15px;}::before{content:'';position:absolute;left:0;top:0;width:100%;border-radius:5px;height:100%;background:linear-gradient(135deg,#23bdb8 0%,#43e794 100%);z-index:-1;opacity:0;visibility:hidden;-webkit-transition:0.5s;transition:0.5s;}&.bg-f78acb{border-color:rgba(247,138,203,0.3);}&.bg-f78acb .icon{color:#f78acb;background:rgba(247,138,203,0.3);}&.bg-c679e3{border-color:#edc3fc;}&.bg-c679e3 .icon{color:#c679e3;background:#edc3fc;}&.bg-eb6b3d{border-color:rgba(235,107,61,0.3);}&.bg-eb6b3d .icon{color:#eb6b3d;background:rgba(235,107,61,0.3);}:hover{-webkit-transform:translateY(-9px);transform:translateY(-9px);border-color:transparent;}:hover::before{opacity:1;visibility:visible;}:hover .icon{background:#ffffff;color:#44ce6f;}:hover:not(.img){color:#ffffff;-webkit-transition:0.5s;transition:0.5s;}:hover.bg-f78acb .icon{color:#f78acb;}&:hover.bg-c679e3 .icon{color:#c679e3;}&:hover.bg-eb6b3d .icon{color:#eb6b3d;}"]);
+
+
+var IconBox = function IconBox(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    primary: props.primary,
+    secondary: props.secondary
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, props.icon), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_1__["StyledHeading"], {
+    className: "heading"
+  }, props.heading), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_1__["StyledText"], null, props.text));
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (IconBox);
+
+/***/ }),
+
+/***/ "./components/molecular/IconBox/style.js":
+/*!***********************************************!*\
+  !*** ./components/molecular/IconBox/style.js ***!
+  \***********************************************/
+/*! exports provided: StyledHeading, StyledText, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledHeading", function() { return StyledHeading; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledText", function() { return StyledText; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "./node_modules/rebass/dist/index.js");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var StyledBox = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"]).withConfig({
+  displayName: "style__StyledBox",
+  componentId: "sc-1ezgw7e-0"
+})(["border:1px dashed #cdf1d8;padding:30px 20px;position:relative;border-radius:5px;background:#ffffff;box-shadow:0 0 10px rgba(72,69,224,0.1);transition:0.5s;height:300px;.icon{display:inline-block;text-align:center;width:55px;height:55px;line-height:55px;background:", ";border-radius:50%;color:", ";transition:0.5s;*{vertical-align:middle;}}&::before{content:'';position:absolute;left:0;top:0;width:100%;border-radius:5px;height:100%;background:linear-gradient(135deg,#23bdb8 0%,#43e794 100%);z-index:-1;opacity:0;visibility:hidden;transition:0.5s;}&:hover{transform:translateY(-9px);border-color:transparent;}&:hover::before{opacity:1;visibility:visible;}&:hover .icon{background:#ffffff;}"], function (props) {
+  return props.secondary || '#cdf1d8';
+}, function (props) {
+  return props.primary || '#44ce6f';
+});
+var StyledHeading = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(rebass__WEBPACK_IMPORTED_MODULE_1__["Heading"]).withConfig({
+  displayName: "style__StyledHeading",
+  componentId: "sc-1ezgw7e-1"
+})(["font-size:18px;margin-top:25px;margin-bottom:15px;font-weight:500;", ":hover &{color:#ffffff;}"], StyledBox);
+var StyledText = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(rebass__WEBPACK_IMPORTED_MODULE_1__["Text"]).withConfig({
+  displayName: "style__StyledText",
+  componentId: "sc-1ezgw7e-2"
+})(["color:#6084a4;line-height:1.9;", ":hover &{color:#ffffff;}"], StyledBox);
+/* harmony default export */ __webpack_exports__["default"] = (StyledBox);
 
 /***/ }),
 
@@ -274,7 +330,7 @@ var MainBanner = function MainBanner() {
     p: 3,
     px: [3, 5],
     width: [1, 1, 1 / 2]
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContentHeading, null, "Remori IT Startup Platform Argentina"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContentText, null, "We gather and measure all business' aspects of startups to eventually accumulate experience of success and failures. Data Driven Business is the main system that we are persuing. You can join us!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, null, "We are opened!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContentHeading, null, "Remori IT Startup Platform Argentina"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroContentText, null, "\"Data Driven Business\" We gather and measure all business' aspects of startups to eventually accumulate experience of success and failures. You can join us!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, null, "We are opened!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     mw: 3,
     width: [1, 1, 1 / 2]
