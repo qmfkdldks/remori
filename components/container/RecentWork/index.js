@@ -12,6 +12,8 @@ import Project3 from '../../../images/works-image/3.jpg'
 import Project4 from '../../../images/works-image/4.jpg'
 import Project5 from '../../../images/works-image/5.jpg'
 
+import { Shape2, Shape4, Shape8 } from '../../atomic/Shape'
+
 const slideOptions = {
     items: 4,
     loop: true,
@@ -37,10 +39,10 @@ const slideOptions = {
 class RecentWork extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { display:false}; 
+        this.state = { display: false };
     }
 
-    componentDidMount(){ this.setState({display:true}) }
+    componentDidMount() { this.setState({ display: true }) }
 
     render() {
         return (
@@ -52,10 +54,10 @@ class RecentWork extends React.Component {
                 </SectionTitle>
 
                 {/* <div className="row m-0"> */}
-                    {/* <div className="works-slides"> */}
-{ 
-    this.state.display &&
-                        <OwlCarousel
+                {/* <div className="works-slides"> */}
+                {
+                    this.state.display &&
+                    <OwlCarousel
                         className="owl-theme"
                         {...slideOptions}
                     >
@@ -65,9 +67,13 @@ class RecentWork extends React.Component {
                     </OwlCarousel>
                 }
 
-                    {/* </div> */}
+                {/* </div> */}
                 {/* </div> */}
 
+                <Shape8 top="15%" right="10%" />
+                {/* <Shape2 /> */}
+                <Shape4 left="25%" top="15%" />
+                <Shape4 />
                 {/* <div className="shape8 rotateme">
                     <img src={require("../../images/shape2.svg")} alt="shape" />
                 </div>

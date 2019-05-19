@@ -58,13 +58,14 @@ export const Shape1 = (props) =>
     />
 
 
-export const Shape2 = () =>
+export const Shape2 = (props) =>
     <Shape
         top="70%"
         left="15%"
         img={imgShape2}
         animation={RotateMe}
         animationOptions="5s linear infinite"
+        {...props}
     />
 
 export const Shape3 = () =>
@@ -76,13 +77,14 @@ export const Shape3 = () =>
         animationOptions="15s linear infinite"
     />
 
-export const Shape4 = () =>
+export const Shape4 = (props) =>
     <Shape
         right="25%"
         bottom="15%"
         img={imgShape4}
         animation={AnimationFramesOne}
         animationOptions="20s linear infinite"
+        {...props}
     />
 
 export const Shape5 = () =>

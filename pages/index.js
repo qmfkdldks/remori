@@ -2,6 +2,8 @@ import React from 'react'
 import MainBanner from '../components/molecular/MainBanner'
 import BoxArea from '../components/molecular/BoxArea';
 import RecentWork from '../components/container/RecentWork';
+import AboutArea from '../components/molecular/AboutArea';
+import ContactArea from '../components/molecular/Contact';
 // import ServicesArea from '../components/home-one/ServicesArea';
 
 class Index extends React.Component {
@@ -11,7 +13,8 @@ class Index extends React.Component {
         <MainBanner />
         <BoxArea />
         <RecentWork />
-        {/* <ServicesArea /> */}
+        <AboutArea />
+        <ContactArea />
       </React.Fragment>
     )
   }
