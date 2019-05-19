@@ -101,7 +101,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -829,9 +829,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-feather */ "react-feather");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rebass */ "rebass");
-/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./style */ "./components/molecular/Contact/style.js");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! isomorphic-fetch */ "isomorphic-fetch");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./style */ "./components/molecular/Contact/style.js");
 
 
 
@@ -844,7 +846,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
  // import GoogleMapComponent from "./GoogleMapComponent"
-// import 'isomorphic-fetch'
+
 
 
 
@@ -985,19 +987,21 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(ContactArea, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["ContactAreaWrapper"], null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["SectionTitle"], {
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["ContactAreaWrapper"], null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_13__["Flex"], {
+        width: 1,
+        flexWrap: "wrap",
+        justifyContent: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["SectionTitle"], {
         className: "section-title"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Heading"], null, "Get In Touch With Us"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Bar"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Text"], null, "Anything On your Mind. We\u2019ll Be Glad To Assist You!")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Form"], {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Heading"], null, "Get In Touch With Us"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Bar"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Text"], null, "Anything On your Mind. We\u2019ll Be Glad To Assist You!")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_13__["Flex"], {
+        width: 1,
+        px: 2
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Form"], {
         id: "contactForm",
         onSubmit: this.onSubmit
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Flex"], {
-        flexWrap: "wrap"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Box"], {
-        width: 1
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Input"], {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Input"], {
         type: "text",
         name: "name",
-        className: "form-control",
         required: true,
         "data-error": "Please enter your name",
         placeholder: "Name",
@@ -1005,12 +1009,9 @@ function (_React$Component) {
         onChange: this.nameChangeHandler
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         className: "help-block with-errors"
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Box"], {
-        width: 1
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Input"], {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Input"], {
         type: "email",
         name: "email",
-        className: "form-control",
         required: true,
         "data-error": "Please enter your email",
         placeholder: "Email",
@@ -1018,29 +1019,20 @@ function (_React$Component) {
         onChange: this.emailChangeHandler
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         className: "help-block with-errors"
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Box"], {
-        width: 1
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Input"], {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Input"], {
         type: "text",
         name: "phone",
-        className: "form-control",
         placeholder: "Phone",
         value: this.state.formFields.phone,
         onChange: this.phoneChangeHandler
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Box"], {
-        width: 1
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_13__["Input"], {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["Input"], {
         type: "text",
         name: "subject",
-        className: "form-control",
         placeholder: "Subject",
         value: this.state.formFields.subject,
         onChange: this.subjectChangeHandler
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Box"], {
-        width: 1
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("textarea", {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_14__["TextArea"], {
         name: "message",
-        className: "form-control",
         id: "message",
         cols: "30",
         rows: "5",
@@ -1051,14 +1043,15 @@ function (_React$Component) {
         onChange: this.textChangeHandler
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         className: "help-block with-errors"
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Box"], null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_12__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_13__["Button"], {
+        width: 1,
         type: "submit"
       }, "Send Message"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         id: "msgSubmit",
         className: "h3 text-center hidden"
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         className: "clearfix"
-      }))), this.successMessage())));
+      }), this.successMessage())))));
     }
   }]);
 
@@ -1073,7 +1066,7 @@ function (_React$Component) {
 /*!***********************************************!*\
   !*** ./components/molecular/Contact/style.js ***!
   \***********************************************/
-/*! exports provided: Bar, Form, ContactAreaWrapper, SectionTitle, Heading, Text, FormGroup, Label, Input */
+/*! exports provided: Bar, Form, ContactAreaWrapper, SectionTitle, Heading, Text, FormGroup, Label, Input, TextArea */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1087,6 +1080,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormGroup", function() { return FormGroup; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Label", function() { return Label; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextArea", function() { return TextArea; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
@@ -1105,7 +1099,7 @@ var Bar = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(_atomic_Bar__
 var Form = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.form.withConfig({
   displayName: "style__Form",
   componentId: "sc-18nqvz2-1"
-})(["text-align:center;"]);
+})(["width:100%;max-width:400px;margin:auto;"]);
 var ContactAreaWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"]).withConfig({
   displayName: "style__ContactAreaWrapper",
   componentId: "sc-18nqvz2-2"
@@ -1133,7 +1127,11 @@ var Label = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.label.withC
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.input.withConfig({
   displayName: "style__Input",
   componentId: "sc-18nqvz2-8"
-})(["width:100%;max-width:300px;height:45px;padding:10px;font-size:14px;color:#0e314c;border:1px solid #eeeeee;border-radius:0;background:#eeeeee;transition:0.5s;margin-bottom:18px;&:focus{outline:0;background:#ffffff;box-shadow:unset;border-color:#44ce6f;}"]);
+})(["box-sizing:border-box;width:100%;padding:10px;height:45px;font-size:14px;color:#0e314c;border:1px solid #eeeeee;border-radius:0;background:#eeeeee;transition:0.5s;margin-bottom:18px;&:focus{outline:0;background:#ffffff;box-shadow:unset;border-color:#44ce6f;}"]);
+var TextArea = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(Input).withConfig({
+  displayName: "style__TextArea",
+  componentId: "sc-18nqvz2-9"
+})(["height:200px;"]);
 
 /***/ }),
 
@@ -2568,7 +2566,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -2665,6 +2663,17 @@ module.exports = require("core-js/library/fn/symbol");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "isomorphic-fetch":
+/*!***********************************!*\
+  !*** external "isomorphic-fetch" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-fetch");
 
 /***/ }),
 

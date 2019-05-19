@@ -6,7 +6,9 @@ import OBar from '../../atomic/Bar'
 export const Bar = styled(OBar)`
 `
 export const Form = styled.form`
-text-align: center;
+width: 100%;
+max-width: 400px;
+margin: auto;
 `
 
 export const ContactAreaWrapper = styled(OBox)`
@@ -45,10 +47,10 @@ margin-bottom: 10px;
 `
 
 export const Input = styled.input`
+box-sizing : border-box;
 width: 100%;
-max-width: 300px;
-height: 45px;
 padding: 10px;
+height: 45px;
 font-size: 14px;
 color: #0e314c;
 border: 1px solid #eeeeee;
@@ -63,4 +65,8 @@ margin-bottom: 18px;
     box-shadow: unset;
     border-color: #44ce6f;
   }
+`
+
+export const TextArea = styled(Input)`
+height: 200px;
 `

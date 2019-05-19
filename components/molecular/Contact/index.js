@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import * as Icon from 'react-feather'
 // import GoogleMapComponent from "./GoogleMapComponent"
-// import 'isomorphic-fetch'
+import 'isomorphic-fetch'
 import { Box, Flex, Button } from 'rebass'
-import { ContactAreaWrapper, Form, SectionTitle, Heading, Text, Bar, FormGroup, Label, Input } from './style'
+import { ContactAreaWrapper, Form, SectionTitle, Heading, Text, Bar, TextArea, Input } from './style'
 
 class ContactArea extends React.Component {
 
@@ -94,24 +94,21 @@ class ContactArea extends React.Component {
         return (
             <React.Fragment>
                 <ContactAreaWrapper>
+                    <Flex width={1} flexWrap="wrap" justifyContent="center">
+                        <SectionTitle className="section-title">
+                            <Heading>Get In Touch With Us</Heading>
+                            <Bar></Bar>
+                            <Text>Anything On your Mind. We’ll Be Glad To Assist You!</Text>
+                        </SectionTitle>
 
-                    <SectionTitle className="section-title">
-                        <Heading>Get In Touch With Us</Heading>
-                        <Bar></Bar>
-                        <Text>Anything On your Mind. We’ll Be Glad To Assist You!</Text>
-                    </SectionTitle>
-
-                    <Form
-                        id="contactForm"
-                        onSubmit={this.onSubmit}
-                    >
-                        <Flex flexWrap="wrap">
-                            <Box width={1}>
-
+                        <Flex width={1} px={2}>
+                            <Form
+                                id="contactForm"
+                                onSubmit={this.onSubmit}
+                            >
                                 <Input
                                     type="text"
                                     name="name"
-                                    className="form-control"
                                     required data-error="Please enter your name"
                                     placeholder="Name"
                                     value={this.state.formFields.name}
@@ -119,14 +116,10 @@ class ContactArea extends React.Component {
                                 />
                                 <div className="help-block with-errors"></div>
 
-                            </Box>
-
-                            <Box width={1}>
 
                                 <Input
                                     type="email"
                                     name="email"
-                                    className="form-control"
                                     required
                                     data-error="Please enter your email"
                                     placeholder="Email"
@@ -135,36 +128,24 @@ class ContactArea extends React.Component {
                                 />
                                 <div className="help-block with-errors"></div>
 
-                            </Box>
-
-                            <Box width={1}>
-
                                 <Input
                                     type="text"
                                     name="phone"
-                                    className="form-control"
                                     placeholder="Phone"
                                     value={this.state.formFields.phone}
                                     onChange={this.phoneChangeHandler}
                                 />
 
-                            </Box>
-
-                            <Box width={1}>
                                 <Input
                                     type="text"
                                     name="subject"
-                                    className="form-control"
                                     placeholder="Subject"
                                     value={this.state.formFields.subject}
                                     onChange={this.subjectChangeHandler}
                                 />
-                            </Box>
 
-                            <Box width={1}>
-                                <textarea
+                                <TextArea
                                     name="message"
-                                    className="form-control"
                                     id="message"
                                     cols="30"
                                     rows="5"
@@ -175,19 +156,15 @@ class ContactArea extends React.Component {
                                     onChange={this.textChangeHandler}
                                 />
                                 <div className="help-block with-errors"></div>
-                            </Box>
 
-                            <Box>
-
-                                <Button type="submit">Send Message</Button>
+                                <Button width={1} type="submit">Send Message</Button>
 
                                 <div id="msgSubmit" className="h3 text-center hidden"></div>
                                 <div className="clearfix"></div>
-                            </Box>
+                                {this.successMessage()}
+                            </Form>
                         </Flex>
-                        {this.successMessage()}
-                    </Form>
-
+                    </Flex>
                 </ContactAreaWrapper>
             </React.Fragment>
         )
