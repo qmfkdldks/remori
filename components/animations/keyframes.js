@@ -70,3 +70,12 @@ export const AnimationFramesOne = keyframes`
     transform: translate(0px, 0px) rotate(0deg);
   }
 `
+
+export const MoveBg = keyframes`
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(88px);
+}
+`

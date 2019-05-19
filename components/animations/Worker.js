@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Fade, Bounce, Zoom, Rotate, Roll } from 'react-reveal';
 
 const ImageContainer = styled.div`
+max-width: 540px;
 position: relative;
 
 @media only screen and (max-width: 767px) {
@@ -214,13 +215,6 @@ const Worker = (props) => (
             className="dot"
         />
     </Zoom>
-    <Fade bottom>
-        <InnerImage 
-            src={require("../../images/banner-image/keyboard.png")} 
-            alt="keyboard"
-            className="keyboard"
-        />
-    </Fade>
     <Zoom>
         <InnerImage 
             src={require("../../images/banner-image/table.png")} 
@@ -228,6 +222,13 @@ const Worker = (props) => (
             className="table"
         />
     </Zoom>
+    <Fade bottom>
+        <InnerImage 
+            src={require("../../images/banner-image/keyboard.png")} 
+            alt="keyboard"
+            className="keyboard"
+        />
+    </Fade>
     <Zoom>
         <InnerImage 
             src={require("../../images/banner-image/pen.png")} 

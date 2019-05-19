@@ -93,6 +93,86 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/GoogleTagManager.js":
+/*!****************************************!*\
+  !*** ./components/GoogleTagManager.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_google_tag_manager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-google-tag-manager */ "react-google-tag-manager");
+/* harmony import */ var react_google_tag_manager__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_google_tag_manager__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+var GoogleTagManager =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(GoogleTagManager, _React$Component);
+
+  function GoogleTagManager() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, GoogleTagManager);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(GoogleTagManager).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(GoogleTagManager, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var dataLayerName = this.props.dataLayerName || 'dataLayer';
+      var scriptId = this.props.scriptId || 'react-google-tag-manager-gtm'; // if (!window[dataLayerName]) {
+      //     const gtmScriptNode = document.getElementById(scriptId);
+      //     eval(gtmScriptNode.textContent);
+      // }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var gtm = react_google_tag_manager__WEBPACK_IMPORTED_MODULE_7___default()({
+        id: this.props.gtmId,
+        dataLayerName: this.props.dataLayerName || 'dataLayer',
+        additionalEvents: this.props.additionalEvents || {},
+        previewVariables: this.props.previewVariables || false,
+        scheme: this.props.scheme || 'https:'
+      });
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, gtm.noScriptAsReact()), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: this.props.scriptId || 'react-google-tag-manager-gtm'
+      }, gtm.scriptAsReact()));
+    }
+  }]);
+
+  return GoogleTagManager;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component); // GoogleTagManager.propTypes = {
+//     gtmId: PropTypes.string.isRequired,
+//     dataLayerName: PropTypes.string,
+//     additionalEvents: PropTypes.object,
+//     previewVariables: PropTypes.string,
+//     scriptId: PropTypes.string,
+//     scheme: PropTypes.string,
+// };
+
+
+/* harmony default export */ __webpack_exports__["default"] = (GoogleTagManager);
+
+/***/ }),
+
 /***/ "./images/favicon.png":
 /*!****************************!*\
   !*** ./images/favicon.png ***!
@@ -2317,6 +2397,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./_theme */ "./pages/_theme.js");
+/* harmony import */ var _components_GoogleTagManager__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/GoogleTagManager */ "./components/GoogleTagManager.js");
 
 
 
@@ -2337,6 +2418,7 @@ function _templateObject() {
 
   return data;
 }
+
 
 
 
@@ -2370,7 +2452,9 @@ function (_Document) {
         href: __webpack_require__(/*! ../images/favicon.png */ "./images/favicon.png")
       })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_11__["ThemeProvider"], {
         theme: _theme__WEBPACK_IMPORTED_MODULE_12__["default"]
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], null))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(GlobalStyle, null));
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_GoogleTagManager__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        gtmId: "GTM-WJ367PD"
+      }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(GlobalStyle, null));
     }
   }], [{
     key: "getInitialProps",
@@ -2669,6 +2753,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-google-tag-manager":
+/*!*******************************************!*\
+  !*** external "react-google-tag-manager" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-google-tag-manager");
 
 /***/ }),
 

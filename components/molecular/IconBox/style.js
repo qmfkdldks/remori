@@ -62,6 +62,7 @@ font-size: 18px;
 margin-top: 25px;
 margin-bottom: 15px;
 font-weight: 500;
+color: #0e314c;
 
 ${StyledBox}:hover & {
 	color: #ffffff;	
