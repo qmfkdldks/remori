@@ -2529,6 +2529,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_container_RecentWork__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/container/RecentWork */ "./components/container/RecentWork/index.js");
 /* harmony import */ var _components_molecular_AboutArea__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/molecular/AboutArea */ "./components/molecular/AboutArea/index.js");
 /* harmony import */ var _components_molecular_Contact__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/molecular/Contact */ "./components/molecular/Contact/index.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -2540,6 +2542,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
  // import ServicesArea from '../components/home-one/ServicesArea';
+
+
 
 var Index =
 /*#__PURE__*/
@@ -2555,7 +2559,10 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_MainBanner__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_BoxArea__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_container_RecentWork__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_AboutArea__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_Contact__WEBPACK_IMPORTED_MODULE_10__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_11___default.a, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("title", null, "Remori Startup Argentina"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("meta", {
+        name: "description",
+        content: "Platform to meet startup partners, projects and passions in Buenos Aires."
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_MainBanner__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_BoxArea__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_container_RecentWork__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_AboutArea__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_molecular_Contact__WEBPACK_IMPORTED_MODULE_10__["default"], null));
     }
   }]);
 
@@ -2696,6 +2703,17 @@ module.exports = require("next-server/dist/lib/utils");
 /***/ (function(module, exports) {
 
 module.exports = require("next/dynamic");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

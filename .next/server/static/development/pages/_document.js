@@ -137,10 +137,12 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       var dataLayerName = this.props.dataLayerName || 'dataLayer';
-      var scriptId = this.props.scriptId || 'react-google-tag-manager-gtm'; // if (!window[dataLayerName]) {
-      //     const gtmScriptNode = document.getElementById(scriptId);
-      //     eval(gtmScriptNode.textContent);
-      // }
+      var scriptId = this.props.scriptId || 'react-google-tag-manager-gtm';
+
+      if (!window[dataLayerName]) {
+        var gtmScriptNode = document.getElementById(scriptId);
+        eval(gtmScriptNode.textContent);
+      }
     }
   }, {
     key: "render",
