@@ -9,7 +9,7 @@ position: relative;
 margin-top: 300px;
 height: 510px;
 z-index: 1;
-background: transparent url(${img}) right top no-repeat;
+// background: transparent url(${img}) right top no-repeat;
 
 @media only screen and (max-width: 767px) {
     height: 100%;
@@ -33,7 +33,7 @@ color: #0e314c;
 `
 export const HeroContentText = styled(Text)`
 margin-bottom: 30px;
-color: #6084a4;
+color: #586069;
 line-height: 1.9;
 `
 

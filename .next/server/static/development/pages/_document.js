@@ -2532,6 +2532,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   fonts: {
     sans: 'Poppins, sans-serif, system-ui'
+  },
+  colors: {
+    lightgray: '#f6f6ff'
   }
 });
 

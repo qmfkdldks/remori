@@ -41,7 +41,7 @@ opacity: ${props => props.opacity || 1};
 const Shape = (props) => {
     return (
         <StyledDiv {...props} >
-            <Image src={props.img} />
+            <Image src={props.img} alt="remori shape" />
         </StyledDiv>
     )
 }

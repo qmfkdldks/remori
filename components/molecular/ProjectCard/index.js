@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
     return (
         <SigleWorkWrapper>
             <SingleWork className="single-works">
-                <Image src={img} />
+                <Image src={img} alt="remori project" />
 
                 {/* <Link href="#">
                         <a className="icon">

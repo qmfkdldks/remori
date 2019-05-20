@@ -26,7 +26,6 @@ color: #0e314c;
 export const Text = styled(OText)`
 max-width: 520px;
 margin: 0 auto;
-color: #6084a4;
 line-height: 1.9;
 `
 

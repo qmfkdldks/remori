@@ -15,7 +15,7 @@ margin-bottom: 18px;
 
 export const Text = styled(OText)`
 margin: 0;
-color: #6084a4;
+color: #586069;
 line-height: 1.9;
 `
 

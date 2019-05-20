@@ -70,7 +70,7 @@ ${StyledBox}:hover & {
 `
 
 export const StyledText = styled(Text)`
-color: #6084a4;
+color: #586069;
 line-height: 1.9;
 
 ${StyledBox}:hover & {

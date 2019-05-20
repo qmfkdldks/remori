@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
-import * as Icon from 'react-feather'
+// import Link from 'next/link'
+// import * as Icon from 'react-feather'
 // import GoogleMapComponent from "./GoogleMapComponent"
 import 'isomorphic-fetch'
-import { Box, Flex, Button } from 'rebass'
-import { ContactAreaWrapper, Form, SectionTitle, Heading, Text, Bar, TextArea, Input } from './style'
+import { Flex, Button } from 'rebass'
+import { ContactAreaWrapper, Form, SectionTitle, Heading, Text, Bar, TextArea, Input, Label } from './style'
 
 class ContactArea extends React.Component {
 
@@ -106,44 +106,49 @@ class ContactArea extends React.Component {
                                 id="contactForm"
                                 onSubmit={this.onSubmit}
                             >
+                                <Label>Name
                                 <Input
-                                    type="text"
-                                    name="name"
-                                    required data-error="Please enter your name"
-                                    placeholder="Name"
-                                    value={this.state.formFields.name}
-                                    onChange={this.nameChangeHandler}
-                                />
+                                        type="text"
+                                        name="name"
+                                        required data-error="Please enter your name"
+                                        placeholder="Name"
+                                        value={this.state.formFields.name}
+                                        onChange={this.nameChangeHandler}
+                                    />
+                                </Label>
                                 <div className="help-block with-errors"></div>
 
-
+                                <Label>Email
                                 <Input
-                                    type="email"
-                                    name="email"
-                                    required
-                                    data-error="Please enter your email"
-                                    placeholder="Email"
-                                    value={this.state.formFields.email}
-                                    onChange={this.emailChangeHandler}
-                                />
-                                <div className="help-block with-errors"></div>
-
+                                        type="email"
+                                        name="email"
+                                        required
+                                        data-error="Please enter your email"
+                                        placeholder="Email"
+                                        value={this.state.formFields.email}
+                                        onChange={this.emailChangeHandler}
+                                    />
+                                    <div className="help-block with-errors"></div>
+                                </Label>
+                                <Label>Phone
                                 <Input
-                                    type="text"
-                                    name="phone"
-                                    placeholder="Phone"
-                                    value={this.state.formFields.phone}
-                                    onChange={this.phoneChangeHandler}
-                                />
-
+                                        type="text"
+                                        name="phone"
+                                        placeholder="Phone"
+                                        value={this.state.formFields.phone}
+                                        onChange={this.phoneChangeHandler}
+                                    />
+                                </Label>
+                                <Label>Subject
                                 <Input
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Subject"
-                                    value={this.state.formFields.subject}
-                                    onChange={this.subjectChangeHandler}
-                                />
-
+                                        type="text"
+                                        name="subject"
+                                        placeholder="Subject"
+                                        value={this.state.formFields.subject}
+                                        onChange={this.subjectChangeHandler}
+                                    />
+                                </Label>
+                                <Label>Message</Label>
                                 <TextArea
                                     name="message"
                                     id="message"
