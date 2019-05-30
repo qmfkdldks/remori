@@ -9,8 +9,12 @@ import ProjectCard from '../../molecular/ProjectCard'
 import Project1 from '../../../images/works-image/1.jpg'
 import Project2 from '../../../images/works-image/2.jpg'
 import Project3 from '../../../images/works-image/3.jpg'
-import Project4 from '../../../images/works-image/4.jpg'
-import Project5 from '../../../images/works-image/5.jpg'
+import Proveat from '../../../images/works-image/proveat.webp'
+// import Proveat from '../../../images/works-image/proveat-demo.webp'
+import ProveatMobile from '../../../images/works-image/proveat-mobile.webp'
+import Solvi from '../../../images/works-image/solvi.webp'
+import SueldoHoy from '../../../images/works-image/sueldohoy.webp'
+import DigitalMenu from '../../../images/works-image/digital-menu.webp'
 
 import { Shape2, Shape4, Shape8 } from '../../atomic/Shape'
 
@@ -61,9 +65,10 @@ class RecentWork extends React.Component {
                         className="owl-theme"
                         {...slideOptions}
                     >
-                        <ProjectCard img={Project1} title="Proveat" description="Restaurant data collector which helps decision making to owners." />
-                        <ProjectCard img={Project2} title="Version" description="Connect game world with reality. If you win game you win real rewards." />
-                        <ProjectCard img={Project3} title="Solvi" description="Calculate demanding stock in the future with collected data" />
+                        <ProjectCard img={Proveat} title="Proveat" description="Restaurant data collector which helps decision making to owners." />
+                        <ProjectCard img={ProveatMobile} title="Proveat Mobile" description="Mobile App to record incomes and costs of restaurant operation." />
+                        <ProjectCard img={SueldoHoy} title="SueldoHoy" description="A calculator which shows how inflation (55.8%) changed Argentina market in less than 5 interactinos." />
+                        <ProjectCard img={Solvi} title="Solvi" description="Calculate demanding stock in the future with collected data" />
                     </OwlCarousel>
                 }
 

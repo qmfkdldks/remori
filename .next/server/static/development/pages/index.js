@@ -440,11 +440,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_works_image_2_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_2_jpg__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _images_works_image_3_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../images/works-image/3.jpg */ "./images/works-image/3.jpg");
 /* harmony import */ var _images_works_image_3_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_3_jpg__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _images_works_image_4_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../images/works-image/4.jpg */ "./images/works-image/4.jpg");
-/* harmony import */ var _images_works_image_4_jpg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_4_jpg__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _images_works_image_5_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../images/works-image/5.jpg */ "./images/works-image/5.jpg");
-/* harmony import */ var _images_works_image_5_jpg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_5_jpg__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _atomic_Shape__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../atomic/Shape */ "./components/atomic/Shape.js");
+/* harmony import */ var _images_works_image_proveat_webp__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../images/works-image/proveat.webp */ "./images/works-image/proveat.webp");
+/* harmony import */ var _images_works_image_proveat_webp__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_proveat_webp__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _images_works_image_proveat_mobile_webp__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../images/works-image/proveat-mobile.webp */ "./images/works-image/proveat-mobile.webp");
+/* harmony import */ var _images_works_image_proveat_mobile_webp__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_proveat_mobile_webp__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _images_works_image_solvi_webp__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../images/works-image/solvi.webp */ "./images/works-image/solvi.webp");
+/* harmony import */ var _images_works_image_solvi_webp__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_solvi_webp__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _images_works_image_sueldohoy_webp__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../images/works-image/sueldohoy.webp */ "./images/works-image/sueldohoy.webp");
+/* harmony import */ var _images_works_image_sueldohoy_webp__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_sueldohoy_webp__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _images_works_image_digital_menu_webp__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../images/works-image/digital-menu.webp */ "./images/works-image/digital-menu.webp");
+/* harmony import */ var _images_works_image_digital_menu_webp__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_images_works_image_digital_menu_webp__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _atomic_Shape__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../atomic/Shape */ "./components/atomic/Shape.js");
 
 
 
@@ -467,6 +473,10 @@ var OwlCarousel = next_dynamic__WEBPACK_IMPORTED_MODULE_8___default()(function (
   }
 });
 
+
+
+
+ // import Proveat from '../../../images/works-image/proveat-demo.webp'
 
 
 
@@ -525,24 +535,28 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_7__["WorkArea"], null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_7__["SectionTitle"], null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_7__["Heading"], null, "Our Recent Works"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_7__["Bar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_7__["Text"], null, "Before building product, It's really important to set crystal clear goal. Meet our goal and data driven projects!")), this.state.display && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(OwlCarousel, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         className: "owl-theme"
       }, slideOptions), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_molecular_ProjectCard__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        img: _images_works_image_1_jpg__WEBPACK_IMPORTED_MODULE_10___default.a,
+        img: _images_works_image_proveat_webp__WEBPACK_IMPORTED_MODULE_13___default.a,
         title: "Proveat",
         description: "Restaurant data collector which helps decision making to owners."
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_molecular_ProjectCard__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        img: _images_works_image_2_jpg__WEBPACK_IMPORTED_MODULE_11___default.a,
-        title: "Version",
-        description: "Connect game world with reality. If you win game you win real rewards."
+        img: _images_works_image_proveat_mobile_webp__WEBPACK_IMPORTED_MODULE_14___default.a,
+        title: "Proveat Mobile",
+        description: "Mobile App to record incomes and costs of restaurant operation."
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_molecular_ProjectCard__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        img: _images_works_image_3_jpg__WEBPACK_IMPORTED_MODULE_12___default.a,
+        img: _images_works_image_sueldohoy_webp__WEBPACK_IMPORTED_MODULE_16___default.a,
+        title: "SueldoHoy",
+        description: "A calculator which shows how inflation (55.8%) changed Argentina market in less than 5 interactinos."
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_molecular_ProjectCard__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        img: _images_works_image_solvi_webp__WEBPACK_IMPORTED_MODULE_15___default.a,
         title: "Solvi",
         description: "Calculate demanding stock in the future with collected data"
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_atomic_Shape__WEBPACK_IMPORTED_MODULE_15__["Shape8"], {
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_atomic_Shape__WEBPACK_IMPORTED_MODULE_18__["Shape8"], {
         top: "15%",
         right: "10%"
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_atomic_Shape__WEBPACK_IMPORTED_MODULE_15__["Shape4"], {
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_atomic_Shape__WEBPACK_IMPORTED_MODULE_18__["Shape4"], {
         left: "25%",
         top: "15%"
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_atomic_Shape__WEBPACK_IMPORTED_MODULE_15__["Shape4"], null));
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_atomic_Shape__WEBPACK_IMPORTED_MODULE_18__["Shape4"], null));
     }
   }]);
 
@@ -1646,25 +1660,58 @@ module.exports = "/_next/static/images/3-1a329ec9912c7da935919660c39bbf64.jpg";
 
 /***/ }),
 
-/***/ "./images/works-image/4.jpg":
-/*!**********************************!*\
-  !*** ./images/works-image/4.jpg ***!
-  \**********************************/
+/***/ "./images/works-image/digital-menu.webp":
+/*!**********************************************!*\
+  !*** ./images/works-image/digital-menu.webp ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/4-8c0065122ce8e605b935c42cb746a571.jpg";
+module.exports = "/_next/static/images/digital-menu-fe10dd6ead20695cb888cc6867d9f060.webp";
 
 /***/ }),
 
-/***/ "./images/works-image/5.jpg":
-/*!**********************************!*\
-  !*** ./images/works-image/5.jpg ***!
-  \**********************************/
+/***/ "./images/works-image/proveat-mobile.webp":
+/*!************************************************!*\
+  !*** ./images/works-image/proveat-mobile.webp ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/5-8b2d85812177cd414f098b07a07c790c.jpg";
+module.exports = "/_next/static/images/proveat-mobile-28a611cc17d70d3f5bf4ffb535b7e016.webp";
+
+/***/ }),
+
+/***/ "./images/works-image/proveat.webp":
+/*!*****************************************!*\
+  !*** ./images/works-image/proveat.webp ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/proveat-d0fe04ad97b890468daf07bce8bb3022.webp";
+
+/***/ }),
+
+/***/ "./images/works-image/solvi.webp":
+/*!***************************************!*\
+  !*** ./images/works-image/solvi.webp ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/solvi-e4884e1c01650a4729cb4785d1e3de46.webp";
+
+/***/ }),
+
+/***/ "./images/works-image/sueldohoy.webp":
+/*!*******************************************!*\
+  !*** ./images/works-image/sueldohoy.webp ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/sueldohoy-c98b0c31513181dae4efd93db94a9842.webp";
 
 /***/ }),
 
