@@ -12,6 +12,8 @@
 ### Technologies involved
 - Next.js
 - React.js
+- Storybook
+- React Reveal
 - Rebass (UI)
 - Google App Engine
 - SendGrid Email
