@@ -11,7 +11,7 @@ const handler = routes.getRequestHandler(app)
 const bodyParser = require('body-parser')
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('SG.GMZfuiV1RC6vLBYZVbpyrQ.Mf8Cdy_8wqMe61HpRH8ZvccIoqQyMwxZY2Y7wRwRwxE');
+sgMail.setApiKey(process.env.SENDGRID_API);
 
 // With express
 const express = require("express")
@@ -23,7 +23,7 @@ app.prepare().then(() => {
   server.use(bodyParser.json())
 
   server.post('/api/contact', function (req, res) {
-    
+
     const { email = '', name = '', phone = '', subject = '', text = '' } = req.body
 
     const msg = {
@@ -33,7 +33,7 @@ app.prepare().then(() => {
       text: text,
       html: `<h1>${name}</h1><strong>${phone}</strong><p>${text}</p>`,
     };
-    
+
     sgMail.send(msg);
     res.send('GET request to the homepage');
   });

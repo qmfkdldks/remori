@@ -19,6 +19,9 @@ handlers:
   script: auto
   secure: always
 
+env_variables:
+  MY_VAR: "SG.GMZfuiV1RC6vLBYZVbpyrQ.Mf8Cdy_8wqMe61HpRH8ZvccIoqQyMwxZY2Y7wRwRwxE"
+
 # manual_scaling:  
 #   instances: 1
 # resources:  
