@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import { keyframes } from "styled-components";
 
 export const Rotate3d = keyframes`
 0% {
@@ -24,7 +24,7 @@ export const MoveBounce = keyframes`
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-`; 
+`;
 
 export const MoveLeftBounce = keyframes`
 0% {
@@ -39,7 +39,7 @@ export const MoveLeftBounce = keyframes`
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-`
+`;
 
 export const RotateMe = keyframes`
 from {
@@ -48,7 +48,7 @@ from {
 to {
     transform: rotate(360deg);
 }
-`
+`;
 
 export const AnimationFramesOne = keyframes`
 0% {
@@ -69,7 +69,7 @@ export const AnimationFramesOne = keyframes`
   100% {
     transform: translate(0px, 0px) rotate(0deg);
   }
-`
+`;
 
 export const MoveBg = keyframes`
 from {
@@ -78,4 +78,4 @@ from {
 to {
   transform: translateX(88px);
 }
-`
+`;

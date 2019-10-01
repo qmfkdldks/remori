@@ -1,12 +1,7 @@
-import { configure } from '@storybook/react';
+import { configure } from "@storybook/react";
+import "./addons";
 
-// import '../assets/css/animate.css';
-// import '../assets/css/responsive.css';
-// import '../assets/css/slick.css';
-// import '../assets/css/style.css';
-
-// automatically import all files ending in *.stories.js
-const req = require.context('../components', true, /stories\.js$/);
+const req = require.context("../components", true, /story.jsx$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
