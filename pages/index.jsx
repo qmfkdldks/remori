@@ -1,13 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import MainBanner from "../components/molecular/MainBanner";
-import BoxArea from "../components/molecular/BoxArea";
-import RecentWork from "../components/container/RecentWork";
-import AboutArea from "../components/molecular/AboutArea";
-import ContactArea from "../components/molecular/Contact";
+import MainBanner from "../components/MainBanner";
+import BoxArea from "../components/BoxArea";
+import RecentWork from "../components/RecentWork";
+import AboutArea from "../components/AboutArea";
+import ServiceArea from "../components/ServiceArea";
+// import ContactArea from "../components/Contact";
 // import ServicesArea from '../components/home-one/ServicesArea';
-import ServiceArea from "../components/molecular/ServiceArea";
-import Worker from "../components/animations/Service";
 
 const Index = () => {
   return (
