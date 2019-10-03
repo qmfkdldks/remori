@@ -1,5 +1,7 @@
 # Remori Startup Argentina
 
+[![codecov](https://codecov.io/gh/qmfkdldks/remori/branch/master/graph/badge.svg)](https://codecov.io/gh/qmfkdldks/remori)
+
 ![remori](https://user-images.githubusercontent.com/19354273/58649300-25ce2f00-82e2-11e9-9a86-cd74e5c8d703.png)
 
 ### Context

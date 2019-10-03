@@ -1,37 +1,57 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Box as OBox, Heading as OHeading, Text as OText } from 'rebass'
-import OBar from '../../atomic/Bar'
+import styled from "styled-components";
 
-export const Wrapper = styled(OBox)`
-padding-top: 80px;
-padding-bottom: 80px;
-max-width: 1140px;
-margin: auto;
-`
+export const Wrapper = styled.div`
+  @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+  font-family: "Rubik", sans-serif;
 
-export const SectionTitle = styled(OBox)`
-text-align: left;
-margin-bottom: 18px;
-`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 80px 0px;
 
-export const Text = styled(OText)`
-margin: 0;
-color: #586069;
-line-height: 1.9;
-`
+  > div {
+    width: 40%;
+  }
 
-export const Bar = styled(OBar)`
-margin-right: 0;
-margin-left: 0;
-`
+  @media screen and (max-width: 1170px) {
+    > div {
+      width: 90%;
+    }
+  }
+`;
 
-export const AboutInnerArea = styled(OBox)`
-margin-top: 60px;
-`
+export const Description = styled.div``;
 
-export const Heading = styled(OBox)`
-color: #0e314c;
-font-size: 18px;
-margin-bottom: 15px;
-`
+export const IconBoxContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  > div {
+    width: 45%;
+  }
+
+  @media screen and (max-width: 1170px) {
+    > div {
+      width: 95%;
+    }
+  }
+`;
+
+export const SectionTitle = styled.div`
+  text-align: left;
+  margin-bottom: 18px;
+`;
+
+export const Text = styled.p`
+  margin: 0;
+  color: #586069;
+  line-height: 1.9;
+`;
+
+export const Heading = styled.h1`
+  color: #0e314c;
+  font-size: 18px;
+  margin-bottom: 15px;
+`;

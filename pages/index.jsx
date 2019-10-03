@@ -7,6 +7,7 @@ import AboutArea from "../components/AboutArea";
 import ServiceArea from "../components/ServiceArea";
 // import ContactArea from "../components/Contact";
 // import ServicesArea from '../components/home-one/ServicesArea';
+import Navbar from "../components/Navbar";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
           content="Platform to meet startup partners, projects and passions in Buenos Aires."
         />
       </Head>
+      <Navbar />
       <MainBanner />
       <BoxArea />
       <RecentWork />

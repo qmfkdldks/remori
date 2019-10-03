@@ -2,10 +2,7 @@
 import styled from "styled-components";
 
 export const Row = styled.div`
-  position: relative;
   margin-top: 30px;
-  z-index: 1;
-  display: block;
   padding: 15px 12px;
   color: #6084a4;
   font-family: sans-serif;
@@ -13,6 +10,7 @@ export const Row = styled.div`
   border-radius: 3px;
   transition: 0.5s;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  max-height: 24px;
 
   &::before {
     content: "";

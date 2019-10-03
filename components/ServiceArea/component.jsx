@@ -1,44 +1,38 @@
 import React from "react";
 import {
   Wrapper,
+  Description,
   SectionTitle,
-  Text,
-  Bar,
-  AboutInnerArea,
-  Heading
+  Heading,
+  IconBoxContainer
 } from "./style";
 
-import Service from "../../animations/Service";
+import Service from "../Service";
+import Bar from "../Bar";
+import IconRow from "../IconRow";
 
-class ServiceArea extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ServiceArea = () => {
+  return (
+    <Wrapper>
+      <Service />
 
-  render() {
-    return (
-      <Wrapper>
-        <Flex flexWrap="wrap">
-          <Box width={[1, 1 / 2]} p={[1, 3]}>
-            <Service />
-          </Box>
+      <Description>
+        <SectionTitle>
+          <Heading>Design & Development</Heading>
+          <Bar />
+        </SectionTitle>
 
-          <Box width={[1, 1 / 2]} p={[1, 3]}>
-            <SectionTitle>
-              <h2>Design & Development</h2>
-              <div className="bar" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </SectionTitle>
-
-            <div className="row" />
-          </Box>
-        </Flex>
-      </Wrapper>
-    );
-  }
-}
+        <IconBoxContainer>
+          <IconRow title="Responsive design" />
+          <IconRow title="Cross Platform Development" />
+          <IconRow title="UX/UI design" />
+          <IconRow title="Data Oriented" />
+          <IconRow title="UX/UI design" />
+          <IconRow title="Data Oriented" />
+        </IconBoxContainer>
+      </Description>
+    </Wrapper>
+  );
+};
 
 export default ServiceArea;

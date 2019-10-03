@@ -1,6 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Image } from "rebass";
 import {
   Rotate3d,
   MoveBounce,
@@ -53,11 +53,16 @@ const StyledDiv = styled.div`
 `;
 
 const Shape = props => {
+  const { img, ...styles } = props;
   return (
-    <StyledDiv {...props}>
-      <Image src={props.img} alt="remori shape" />
+    <StyledDiv {...styles}>
+      <img src={img} alt="remori shape" />
     </StyledDiv>
   );
+};
+
+Shape.propTypes = {
+  img: PropTypes.string.isRequired
 };
 
 export const Shape1 = props => (

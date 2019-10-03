@@ -11,7 +11,6 @@ export const Section = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #aaa;
 
   @media (max-width: 768px) {
     > div {
