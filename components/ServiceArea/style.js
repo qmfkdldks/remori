@@ -40,7 +40,6 @@ export const IconBoxContainer = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-  text-align: left;
   margin-bottom: 18px;
 `;
 
@@ -50,8 +49,10 @@ export const Text = styled.p`
   line-height: 1.9;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.div`
+  font-family: "Rubik", sans-serif;
   color: #0e314c;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 500;
   margin-bottom: 15px;
 `;

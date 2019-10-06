@@ -1,4 +1,4 @@
-# Remori Startup Argentina
+# Remori
 
 [![codecov](https://codecov.io/gh/qmfkdldks/remori/branch/master/graph/badge.svg)](https://codecov.io/gh/qmfkdldks/remori)
 
@@ -11,11 +11,14 @@
 ### Objective
 1. Be partners of 3 enterprise entities.
 
+### 
+
 ### Technologies involved
-- Next.js
-- React.js
-- Storybook
-- React Reveal
-- Rebass (UI)
-- Google App Engine
-- SendGrid Email
+- Next.js (export static files)
+- React.js (Reusable component)
+- Storybook (Preview of individual components)
+- React Reveal (animations)
+- Styled Component (Replacement of css)
+- AWS Lambda (Integration with SendGrid)
+- AWS S3 (Static files hosting with CDN)
+- SendGrid (Email Delivery Service)

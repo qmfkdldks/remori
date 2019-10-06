@@ -3,15 +3,16 @@ import PropTypes from "prop-types";
 import { Row } from "./style";
 import Icon from "../Icon";
 
-const IconRow = ({ title, onClick }) => (
+const IconRow = ({ title, icon, onClick }) => (
   <Row onClick={onClick}>
-    <Icon name="Layout" />
+    <Icon name={icon} />
     {title}
   </Row>
 );
 
 IconRow.propTypes = {
   title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired
 };
 

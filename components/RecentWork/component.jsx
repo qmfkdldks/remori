@@ -1,5 +1,5 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel3";
+import dynamic from "next/dynamic";
 import { WorkArea, SectionTitle, Heading, Text } from "./style";
 
 import Proveat from "./images/1.jpg";
@@ -10,6 +10,7 @@ import SueldoHoy from "./images/4.jpg";
 import ProjectCard from "../ProjectCard";
 import Bar from "../Bar";
 import { Shape4, Shape8 } from "../Shape";
+const OwlCarousel = dynamic(() => import("react-owl-carousel3"));
 
 const slideOptions = {
   items: 4,

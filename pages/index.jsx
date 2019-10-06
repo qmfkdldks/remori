@@ -5,9 +5,9 @@ import BoxArea from "../components/BoxArea";
 import RecentWork from "../components/RecentWork";
 import AboutArea from "../components/AboutArea";
 import ServiceArea from "../components/ServiceArea";
-// import ContactArea from "../components/Contact";
-// import ServicesArea from '../components/home-one/ServicesArea';
+import ContactArea from "../components/Contact";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
@@ -25,6 +25,8 @@ const Index = () => {
       <RecentWork />
       <AboutArea />
       <ServiceArea />
+      <ContactArea />
+      <Footer />
     </>
   );
 };

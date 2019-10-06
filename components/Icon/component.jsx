@@ -9,9 +9,13 @@ const Icon = ({ name, size }) => {
   return <StyledIcon size={size} />;
 };
 
+Icon.defaultProps = {
+  size: { width: 50, height: 50 }
+};
+
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired
+  size: PropTypes.number
 };
 
 export default Icon;

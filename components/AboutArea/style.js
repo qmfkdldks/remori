@@ -60,7 +60,9 @@ export const AboutInnerArea = styled.div`
 `;
 
 export const Heading = styled.div`
+  font-family: "Rubik", sans-serif;
   color: #0e314c;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 500;
   margin-bottom: 15px;
 `;

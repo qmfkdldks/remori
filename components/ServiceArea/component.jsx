@@ -23,12 +23,12 @@ const ServiceArea = () => {
         </SectionTitle>
 
         <IconBoxContainer>
-          <IconRow title="Responsive design" />
-          <IconRow title="Cross Platform Development" />
-          <IconRow title="UX/UI design" />
-          <IconRow title="Data Oriented" />
-          <IconRow title="UX/UI design" />
-          <IconRow title="Data Oriented" />
+          <IconRow icon="Layout" title="Responsive Design" />
+          <IconRow icon="Copy" title="Cross Platform" />
+          <IconRow icon="Framer" title="UX/UI design" />
+          <IconRow icon="Compass" title="Data Driven" />
+          <IconRow icon="Cpu" title="Machine Learning" />
+          <IconRow icon="Code" title="Simplest Solution" />
         </IconBoxContainer>
       </Description>
     </Wrapper>

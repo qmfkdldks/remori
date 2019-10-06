@@ -14,7 +14,9 @@
   "author": "Brian Kang",
   "license": "MIT",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.24",
     "body-parser": "^1.19.0",
+    "formik": "^1.5.8",
     "i18next": "^15.1.1",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-mozjpeg": "^8.0.0",
@@ -33,7 +35,8 @@
     "react-owl-carousel3": "^2.2.5",
     "react-reveal": "^1.2.2",
     "styled-components": "^4.2.0",
-    "styled-icons": "^8.4.2"
+    "styled-icons": "^8.4.2",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
