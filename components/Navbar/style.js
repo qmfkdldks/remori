@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
 import { Menu } from "styled-icons/feather/Menu";
+import { Link } from "react-scroll";
 
 export const Container = styled.header`
   max-width: 1170px;
@@ -43,12 +44,12 @@ export const NavbarCollapse = styled.div`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   font-weight: 500;
   font-size: 14px;
   color: #4a6f8a;
   padding: 0;
-  margin-left: 0px 14px;
+  margin: 0px 14px;
   font-family: "Rubik", sans-serif;
 `;
 

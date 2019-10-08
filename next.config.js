@@ -7,7 +7,7 @@ module.exports = withPlugins([
     optimizedImages,
     {
       inlineImageLimit: 8192,
-      imagesFolder: "images",
+      imagesFolder: "components",
       imagesName: "[name]-[hash].[ext]",
       handleImages: ["jpeg", "jpg", "png", "svg", "webp", "gif"],
       optimizeImages: true,

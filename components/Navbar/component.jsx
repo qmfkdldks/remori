@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Container,
   Navbar,
@@ -7,8 +7,7 @@ import {
   NavbarToggler,
   NavLink,
   MenuIcon,
-  Options,
-  Button
+  Options
 } from "./style";
 
 const Header = () => {
@@ -30,12 +29,21 @@ const Header = () => {
         </NavbarToggler>
 
         <NavbarCollapse collapsed={collapsed}>
-          <NavLink>Home</NavLink>
+          <NavLink to="projects" smooth>
+            Projects
+          </NavLink>
+          <NavLink to="about" smooth>
+            About
+          </NavLink>
+          <NavLink to="services" smooth>
+            Services
+          </NavLink>
+          <NavLink to="contact" smooth>
+            Contact
+          </NavLink>
         </NavbarCollapse>
 
-        <Options>
-          <Button>Login</Button>
-        </Options>
+        <Options>{/* <Button>Login</Button> */}</Options>
       </Navbar>
     </Container>
   );

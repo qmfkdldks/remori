@@ -10551,6 +10551,14 @@ react-reveal@^1.2.2:
   dependencies:
     prop-types "^15.5.10"
 
+react-scroll@^1.7.14:
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.7.14.tgz#cb7a19cc0f88e8608f6c3511bb5e03e76a2fbbe9"
+  integrity sha512-zQ2/8+TaEBctA9RSQspP5GWMffA6g7u+AB9gMWB42btZZTBcGEyomvxnm52UVVELjqXOpD9U1/tHhVTNXyntbQ==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.5.8"
+
 react-select@^3.0.0:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-3.0.5.tgz#f2810e63fa8a6be375b3fa6f390284e9e33c9573"
@@ -10583,6 +10591,13 @@ react-ssr-prepass@1.0.2:
   integrity sha512-m8NKaYzWxifPGvrf9WGo/6WtOG6MNBIs2uNdcdIuQswtlkaV19AiFegwTeyblwoH2XxMcRviFJBvr4OkoTt3nA==
   dependencies:
     object-is "^1.0.1"
+
+react-structured-data@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/react-structured-data/-/react-structured-data-0.0.14.tgz#7a851cb65ef26d63244e3b6d5370c751d0a86a33"
+  integrity sha512-B1elbCypGIuLGSrJ3ESqLKepYotELbCpAZBAxsn1DeH2c40XI01Ll568xjGvipTqxvetscuCqm9/wD4GF+DIXw==
+  dependencies:
+    prop-types "^15.6.0"
 
 react-styled-carousel@^0.5.1:
   version "0.5.1"

@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   position: relative;
+  max-width: 1170px;
+  margin: 0px auto;
   padding-bottom: 80px;
-  margin-top: -130px;
   z-index: 1;
 
   display: flex;

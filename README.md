@@ -9,16 +9,24 @@
 > In this information age, still many companies make decisions with out data, objectives and appropriate tools. Our vision is to intervine in a very initial stage of startup to help them to implement right system and tools such as OKR and Data Driven Decision.
 
 ### Objective
+
 1. Be partners of 3 enterprise entities.
 
-### 
-
 ### Technologies involved
-- Next.js (export static files)
+
+- Next.js (Server Side Rendering)
 - React.js (Reusable component)
 - Storybook (Preview of individual components)
-- React Reveal (animations)
+- React Reveal (Reveal animations)
 - Styled Component (Replacement of css)
 - AWS Lambda (Integration with SendGrid)
-- AWS S3 (Static files hosting with CDN)
+- Zeit Now (Hosting)
 - SendGrid (Email Delivery Service)
+
+### Breakpoints
+```
+huge: '1440px'
+large: '1170px'
+medium: '768px'
+small: '450px'
+```

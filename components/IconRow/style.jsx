@@ -27,14 +27,6 @@ export const Row = styled.div`
     transition: 0.5s;
   }
 
-  svg {
-    margin-right: 5px;
-    display: inline-block;
-    color: #44ce6f;
-    transition: 0.5s;
-    width: 18px;
-  }
-
   &:hover {
     color: #ffffff;
     transform: translateY(-10px);
@@ -43,6 +35,14 @@ export const Row = styled.div`
   &:hover::before {
     opacity: 1;
     visibility: visible;
+  }
+
+  svg {
+    margin-right: 5px;
+    color: #44ce6f;
+    transition: 0.5s;
+    width: 18px;
+    height: 18px;
   }
 
   &:hover svg {

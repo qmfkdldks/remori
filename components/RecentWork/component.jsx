@@ -6,11 +6,12 @@ import Bar from "../Bar";
 import { Shape4 } from "../Shape";
 
 import Proveat from "./images/1.jpg";
-import ProveatMobile from "./images/2.jpg";
+import ProveatMobile from "./images/proveat-mobile.webp";
 import Solvi from "./images/3.jpg";
-import SueldoHoy from "./images/4.jpg";
+import SueldoHoy from "./images/sueldohoy.webp";
 
 const responsive = [
+  { breakPoint: 1440, cardsToShow: 4 },
   { breakPoint: 1170, cardsToShow: 2 },
   { breakPoint: 0, cardsToShow: 1 }
 ];

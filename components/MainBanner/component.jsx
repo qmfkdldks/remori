@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   Background,
   HeroContentHeading,
@@ -26,7 +27,7 @@ const MainBanner = () => {
       <Wrapper>
         <HeroBox>
           <HeroContentHeading>
-            Remori IT Startup Platform Argentina
+            Remori Data Driven Startup Argentina
           </HeroContentHeading>
           <HeroContentText>
             "Data Driven Business" We gather and measure all business' aspects
@@ -34,8 +35,9 @@ const MainBanner = () => {
             failures. Share your idea and experience! Together we can build
             concrete foundation of our challenges.
           </HeroContentText>
-
-          <StyledButton>Be Our Partners!</StyledButton>
+          <Link to="contact" smooth>
+            <StyledButton>Be Our Partners!</StyledButton>
+          </Link>
         </HeroBox>
         <WorkerBox>
           <Worker />
