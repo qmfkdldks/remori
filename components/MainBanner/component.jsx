@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   Background,
   HeroContentHeading,
@@ -34,8 +35,9 @@ const MainBanner = () => {
             failures. Share your idea and experience! Together we can build
             concrete foundation of our challenges.
           </HeroContentText>
-
-          <StyledButton>Be Our Partners!</StyledButton>
+          <Link to="contact" smooth>
+            <StyledButton>Be Our Partners!</StyledButton>
+          </Link>
         </HeroBox>
         <WorkerBox>
           <Worker />

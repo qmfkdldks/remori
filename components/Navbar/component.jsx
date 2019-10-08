@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, scroller } from "react-scroll";
 import {
   Container,
   Navbar,
@@ -8,8 +7,7 @@ import {
   NavbarToggler,
   NavLink,
   MenuIcon,
-  Options,
-  Button
+  Options
 } from "./style";
 
 const Header = () => {
@@ -31,31 +29,21 @@ const Header = () => {
         </NavbarToggler>
 
         <NavbarCollapse collapsed={collapsed}>
-          <NavLink>
-            <Link to="projects" smooth>
-              Projects
-            </Link>
+          <NavLink to="projects" smooth>
+            Projects
           </NavLink>
-          <NavLink>
-            <Link to="about" smooth>
-              About
-            </Link>
+          <NavLink to="about" smooth>
+            About
           </NavLink>
-          <NavLink>
-            <Link to="services" smooth>
-              Services
-            </Link>
+          <NavLink to="services" smooth>
+            Services
           </NavLink>
-          <NavLink>
-            <Link to="contact" smooth>
-              Contact
-            </Link>
+          <NavLink to="contact" smooth>
+            Contact
           </NavLink>
         </NavbarCollapse>
 
-        <Options>
-          {/* <Button>Login</Button> */}
-        </Options>
+        <Options>{/* <Button>Login</Button> */}</Options>
       </Navbar>
     </Container>
   );

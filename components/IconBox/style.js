@@ -38,10 +38,7 @@ export const Box = styled.div`
   }
 `;
 
-export const Circle = styled.div.attrs(props => ({
-  background: props.secondary || "#cdf1d8",
-  color: props.primary || "#44ce6f"
-}))`
+export const Circle = styled.div`
   display: inline-block;
   text-align: center;
   width: 55px;
@@ -49,6 +46,8 @@ export const Circle = styled.div.attrs(props => ({
   line-height: 55px;
   border-radius: 50%;
   transition: 0.5s;
+  background: ${props => props.secondary || "#cdf1d8"};
+  color: ${props => props.primary || "#44ce6f"};
 
   * {
     vertical-align: middle;

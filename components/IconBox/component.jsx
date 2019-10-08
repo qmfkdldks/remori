@@ -7,8 +7,8 @@ const IconBox = props => {
   const { primary, secondary, head, text, icon, onClick } = props;
 
   return (
-    <Box primary={primary} secondary={secondary} onClick={onClick}>
-      <Circle>
+    <Box onClick={onClick}>
+      <Circle primary={primary} secondary={secondary}>
         <Icon name={icon} size={35} />
       </Circle>
       <Head>{head}</Head>
@@ -17,22 +17,20 @@ const IconBox = props => {
   );
 };
 
-IconBox.defaultProps = {
-  primary: "#44ce6f",
-  secondary: "#cdf1d8",
-  head: "Zero Configuration",
-  text: "Lorem ipsum dolor sit amet elit, adipiscing.",
-  icon: "Layout",
-  onClick: () => {}
-};
-
 IconBox.propTypes = {
   primary: PropTypes.string,
   secondary: PropTypes.string,
-  head: PropTypes.string,
-  text: PropTypes.string,
+  head: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   icon: PropTypes.string,
   onClick: PropTypes.func
+};
+
+IconBox.defaultProps = {
+  primary: "#44ce6f",
+  secondary: "#cdf1d8",
+  icon: "Layout",
+  onClick: () => {}
 };
 
 export default IconBox;

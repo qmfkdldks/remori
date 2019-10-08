@@ -10,11 +10,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
-// const Contact = dynamic(
-//   () => import("../components/Contact"),
-//   { ssr: false }
-// );
-
 const Index = () => {
   return (
     <>

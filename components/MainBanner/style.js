@@ -36,11 +36,19 @@ export const Wrapper = styled.div`
 
 export const HeroBox = styled.div`
   width: 40%;
+
+  @media screen and (max-width: 1170px) {
+    width: 90%;
+  }
 `;
 
 export const WorkerBox = styled.div`
   width: 40%;
   margin-top: 85px;
+
+  @media screen and (max-width: 1170px) {
+    width: 90%;
+  }
 `;
 
 export const HeroContentHeading = styled.h1`
@@ -64,6 +72,19 @@ export const StyledButton = styled.button`
   border-radius: 4px;
   z-index: 1;
   text-transform: uppercase;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: #ffffff;
+  background-color: #44ce6f;
+
+  &::after,
+  &::before {
+    background: #44ce6f;
+    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  }
+
+  &:hover {
+    background: #007e8b;
+    transform: translateY(-5px);
+    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  }
 `;
