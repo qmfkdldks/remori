@@ -10,10 +10,14 @@ const IconRow = ({ title, icon, onClick }) => (
   </Row>
 );
 
+IconRow.defaultProps = {
+  onClick: () => {}
+};
+
 IconRow.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func
 };
 
 export default IconRow;

@@ -1,38 +1,19 @@
 import React from "react";
-import dynamic from "next/dynamic";
-import { WorkArea, SectionTitle, Heading, Text } from "./style";
+import Slider from "react-styled-carousel";
+import { WorkArea, SectionTitle, Heading, Text, DotsWrapper } from "./style";
+import ProjectCard from "../ProjectCard";
+import Bar from "../Bar";
+import { Shape4 } from "../Shape";
 
 import Proveat from "./images/1.jpg";
 import ProveatMobile from "./images/2.jpg";
 import Solvi from "./images/3.jpg";
 import SueldoHoy from "./images/4.jpg";
 
-import ProjectCard from "../ProjectCard";
-import Bar from "../Bar";
-import { Shape4, Shape8 } from "../Shape";
-const OwlCarousel = dynamic(() => import("react-owl-carousel3"));
-
-const slideOptions = {
-  items: 4,
-  loop: true,
-  nav: false,
-  autoplay: true,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    786: {
-      items: 2
-    },
-    1200: {
-      items: 3
-    },
-    1500: {
-      items: 4
-    }
-  }
-};
+const responsive = [
+  { breakPoint: 1170, cardsToShow: 2 },
+  { breakPoint: 0, cardsToShow: 1 }
+];
 
 const RecentWork = () => {
   return (
@@ -41,11 +22,16 @@ const RecentWork = () => {
         <Heading>Our Recent Works</Heading>
         <Bar />
         <Text>
-          Before building product, It's really important to set crystal clear
+          Before building product, Its really important to set crystal clear
           goal. Meet our goal and data driven projects!
         </Text>
       </SectionTitle>
-      <OwlCarousel className="owl-theme" {...slideOptions}>
+      <Slider
+        showArrows={false}
+        showDots={false}
+        infinite
+        responsive={responsive}
+      >
         <ProjectCard
           imgUrl={Proveat}
           title="Proveat"
@@ -66,8 +52,7 @@ const RecentWork = () => {
           title="Solvi"
           description="Calculate demanding stock in the future with collected data"
         />
-      </OwlCarousel>
-      <Shape8 top="15%" right="10%" />
+      </Slider>
       <Shape4 left="25%" top="15%" />
       <Shape4 />
     </WorkArea>

@@ -10,7 +10,7 @@ const Icon = ({ name, size }) => {
 };
 
 Icon.defaultProps = {
-  size: { width: 50, height: 50 }
+  size: 50
 };
 
 Icon.propTypes = {

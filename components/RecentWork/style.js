@@ -30,3 +30,5 @@ export const Text = styled.p`
   margin: 0 auto;
   line-height: 1.9;
 `;
+
+export const DotsWrapper = styled.ul``;

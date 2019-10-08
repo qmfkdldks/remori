@@ -22,25 +22,21 @@ const EmailSchema = Yup.object().shape({
     .min(5, "Too Short!")
     .max(100, "Too Long!")
     .required("Required"),
-  email: Yup.string()
-    .email("Invalid email")
+  from: Yup.string()
+    .email("Invalid Email")
     .required("Required")
 });
 
-const ContactArea = () => {
-  const successMessage = () => {
-    // if (this.state.submitted) {
-    //   return (
-    //     <div className="alert alert-success">
-    //       <strong>Thank you!</strong> Your message is send to the owner
-    //       <button onClick={this.onHideSuccess} type="button" className="close">
-    //         <span aria-hidden="true">&times;</span>
-    //       </button>
-    //     </div>
-    //   );
-    // }
-  };
+const successMessage = () => {
+  return (
+    <div className="alert alert-success">
+      <strong>Thank you!</strong>
+      Your message is send to the owner
+    </div>
+  );
+};
 
+const ContactArea = () => {
   return (
     <ContactAreaWrapper>
       <SectionTitle className="section-title">
@@ -50,13 +46,12 @@ const ContactArea = () => {
 
       <Formik
         initialValues={{
-          submitted: false,
-          email: "",
+          from: "",
           subject: "",
           text: ""
         }}
         validationSchema={EmailSchema}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, setStatus }) => {
           fetch(
             "https://ofw857kax6.execute-api.us-east-2.amazonaws.com/default/sendEmail",
             {
@@ -66,24 +61,47 @@ const ContactArea = () => {
               },
               body: JSON.stringify(values)
             }
-          ).then(res => {
-            setSubmitting(false);
-            console.log("success");
-          });
+          )
+            .then(res => {
+              setSubmitting(false);
+              setStatus(res.status);
+              console.log(res.status);
+            })
+            .catch(err => {
+              setSubmitting(false);
+              setStatus(err.status);
+            });
         }}
       >
-        {({ isSubmitting }) => (
+        {({ values, handleChange, isSubmitting, status }) => (
           <Form>
-            <Label>
-              Email
-              <ErrorMessage name="from" component="span" />
-            </Label>
-            <Field type="email" name="from" required />
+            {status && successMessage}
+            <Label>Email</Label>
+            <Field
+              type="email"
+              name="from"
+              onChange={handleChange}
+              value={values.from}
+              required
+            />
+            <ErrorMessage name="from" component="span" />
             <Label>Title</Label>
-            <Field type="text" name="subject" required />
+            <Field
+              type="text"
+              name="subject"
+              onChange={handleChange}
+              value={values.subject}
+              required
+            />
             <ErrorMessage name="subject" component="div" />
             <Label>Message</Label>
-            <Field name="text" style={{ height: "150px" }} name="text" />
+            <Field
+              name="text"
+              style={{ height: "150px" }}
+              onChange={handleChange}
+              value={values.text}
+              required
+            />
             <ErrorMessage name="text" component="div" required />
             <Button type="submit" disabled={isSubmitting}>
               Submit
