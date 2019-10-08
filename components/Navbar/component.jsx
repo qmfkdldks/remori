@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Link, scroller } from "react-scroll";
 import {
   Container,
   Navbar,
@@ -30,11 +31,30 @@ const Header = () => {
         </NavbarToggler>
 
         <NavbarCollapse collapsed={collapsed}>
-          <NavLink>Home</NavLink>
+          <NavLink>
+            <Link to="projects" smooth>
+              Projects
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link to="about" smooth>
+              About
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link to="services" smooth>
+              Services
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link to="contact" smooth>
+              Contact
+            </Link>
+          </NavLink>
         </NavbarCollapse>
 
         <Options>
-          <Button>Login</Button>
+          {/* <Button>Login</Button> */}
         </Options>
       </Navbar>
     </Container>

@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
         </Head>
 
-        <body>
+        <body style={{ margin: "unset" }}>
           <Main />
           <NextScript />
           <GoogleTagManager gtmId="GTM-WJ367PD" />
