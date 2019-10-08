@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
         <body style={{ margin: "unset" }}>
           <Main />
           <NextScript />
-          <GoogleTagManager gtmId="GTM-WJ367PD" />
+          <GoogleTagManager gtmId="GTM-TRCCFV4" />
         </body>
       </Html>
     );
