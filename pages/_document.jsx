@@ -25,6 +25,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
+          <meta name="google-site-verification" content="cdgC774hmMVXhOP-m65gdKcnRlS4ooI8S9k-e5d5FsE" />
           <JsonLd data={data} />
         </Head>
 
