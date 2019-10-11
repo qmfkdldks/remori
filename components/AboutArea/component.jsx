@@ -35,7 +35,7 @@ const AboutArea = () => {
 
         <div>
           <SectionTitle>
-            <Heading>About Us</Heading>
+            <Heading>Process</Heading>
             <Bar />
             We need a system that helps us to be tolerant to failures.
           </SectionTitle>

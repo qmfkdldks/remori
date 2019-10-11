@@ -81,6 +81,13 @@ export const NavbarBrand = styled.a`
   white-space: nowrap;
 `;
 
+export const Logo = styled.h1`
+  @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  color: #ffac5d;
+`;
+
 export const Options = styled.div`
   margin-left: 20px;
   @media screen and (max-width: 768px) {

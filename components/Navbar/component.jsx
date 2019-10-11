@@ -7,7 +7,7 @@ import {
   NavbarToggler,
   NavLink,
   MenuIcon,
-  Options
+  Logo
 } from "./style";
 
 const Header = () => {
@@ -21,11 +21,7 @@ const Header = () => {
     <Container>
       <Navbar>
         <NavbarBrand>
-          <img
-            src={require("./images/transparent-logo.png")}
-            width="150"
-            alt="logo"
-          />
+          <Logo>REMORI</Logo>
         </NavbarBrand>
 
         <NavbarToggler onClick={toggleNavbar}>
@@ -47,7 +43,6 @@ const Header = () => {
           </NavLink>
         </NavbarCollapse>
 
-        <Options>{/* <Button>Login</Button> */}</Options>
       </Navbar>
     </Container>
   );

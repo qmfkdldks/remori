@@ -9,8 +9,7 @@ import {
   Title,
   CopyRight,
   SocialLinks,
-  Text,
-  IconRow
+  Text
 } from "./style";
 import Icon from "../Icon";
 
@@ -19,11 +18,7 @@ const Footer = () => {
     <Wrapper>
       <Container>
         <Column>
-          <Logo
-            src={require("./images/transparent-logo.png")}
-            width="150"
-            alt="logo"
-          />
+          <Logo>Remori</Logo>
           <Text>
             Remori is an organization building data driven products and
             services. We try to find business system which can adopt to ever

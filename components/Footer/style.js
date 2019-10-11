@@ -39,8 +39,11 @@ export const Text = styled.p`
   line-height: 1.9;
 `;
 
-export const Logo = styled.img`
-  margin-bottom: 20px;
+export const Logo = styled.h1`
+  @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  color: #ffac5d;
 `;
 
 export const ContactInfo = styled.div`

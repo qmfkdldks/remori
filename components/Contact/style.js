@@ -68,7 +68,7 @@ export const Label = styled.label`
 `;
 
 export const Button = styled.button`
-  background: #c679e3;
+  background: #e9c46a;
   box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
   font-weight: 600;
   font-size: 14px;
@@ -82,12 +82,12 @@ export const Button = styled.button`
 
   &::after,
   &::before {
-    background: #44ce6f;
+    background: #e9c46a;
     box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
   }
 
   &:hover {
-    background: #460064;
+    background: #e5b232;
     transform: translateY(-5px);
     box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
   }
