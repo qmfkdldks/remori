@@ -21,7 +21,11 @@ const Header = () => {
     <Container>
       <Navbar>
         <NavbarBrand>
-          <img src={require("./images/favicon.png")} alt="logo" />
+          <img
+            src={require("./images/transparent-logo.png")}
+            width="150"
+            alt="logo"
+          />
         </NavbarBrand>
 
         <NavbarToggler onClick={toggleNavbar}>

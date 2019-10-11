@@ -5,11 +5,16 @@ import GoogleTagManager from "../components/GoogleTagManager";
 
 const data = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  url: "http://remori.com.ar",
-  logo:
-    "https://www.geniuscr8.com/wp-content/uploads/2018/07/Genius-Concept-Sample-Logo-2.jpg",
-  name: "Remori"
+  "@type": "Corporation",
+  name: "Remori",
+  alternateName: "Remori Argentina",
+  url: "https://remori.com.ar",
+  logo: "https://remori.com.ar/static/logo.png",
+  sameAs: [
+    "https://github.com/qmfkdldks/remori",
+    "https://remori.com.ar",
+    "https://www.linkedin.com/in/brian-kang-56ab51b1/"
+  ]
 };
 
 const JsonLd = ({ data }) => (

@@ -19,10 +19,15 @@ const Footer = () => {
     <Wrapper>
       <Container>
         <Column>
-          <Logo src={require("./images/logo.png")} alt="logo" />
+          <Logo
+            src={require("./images/transparent-logo.png")}
+            width="150"
+            alt="logo"
+          />
           <Text>
             Remori is an organization building data driven products and
-            services. We try to find business system which can adopt to ever changing market.
+            services. We try to find business system which can adopt to ever
+            changing market.
           </Text>
         </Column>
 
@@ -38,7 +43,7 @@ const Footer = () => {
         </Column>
       </Container>
 
-      <CopyRight>Copyright @2019 StartP. All rights reserved</CopyRight>
+      <CopyRight>Copyright @2019 Remori. All rights reserved</CopyRight>
 
       <Map src={require("./images/map.png")} className="map" alt="map" />
     </Wrapper>
