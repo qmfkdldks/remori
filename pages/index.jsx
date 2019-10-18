@@ -2,13 +2,13 @@ import React from "react";
 import { Element } from "react-scroll";
 import Head from "next/head";
 import MainBanner from "../components/MainBanner";
-import BoxArea from "../components/BoxArea";
-import RecentWork from "../components/RecentWork";
+import IconBoxArea from "../components/IconBoxArea";
+import ProjectArea from "../components/ProjectArea";
 import AboutArea from "../components/AboutArea";
 import ServiceArea from "../components/ServiceArea";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Contact from "../components/Contact";
+import ContactArea from "../components/ContactArea";
 
 const Index = () => {
   return (
@@ -40,9 +40,9 @@ const Index = () => {
       </Head>
       <Navbar />
       <MainBanner />
-      <BoxArea />
+      <IconBoxArea />
       <Element name="projects">
-        <RecentWork />
+        <ProjectArea />
       </Element>
       <Element name="about">
         <AboutArea />
@@ -51,7 +51,7 @@ const Index = () => {
         <ServiceArea />
       </Element>
       <Element name="contact">
-        <Contact />
+        <ContactArea />
       </Element>
       <Footer />
     </>

@@ -11,7 +11,7 @@ const IconRow = ({ title, icon, onClick }) => (
 );
 
 IconRow.defaultProps = {
-  onClick: () => {}
+  onClick: null
 };
 
 IconRow.propTypes = {

@@ -29,7 +29,7 @@ ProjectCard.defaultProps = {
   imgUrl: "",
   title: "Title",
   description: "Description",
-  onClick: () => {}
+  onClick: null
 };
 
 ProjectCard.propTypes = {

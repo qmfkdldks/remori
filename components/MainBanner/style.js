@@ -74,16 +74,16 @@ export const StyledButton = styled.button`
   text-transform: uppercase;
   transition: 0.5s;
   color: #ffffff;
-  background-color: #44ce6f;
+  background-color: #2a9d8f;
 
   &::after,
   &::before {
-    background: #44ce6f;
+    background: #2a9d8f;
     box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
   }
 
   &:hover {
-    background: #007e8b;
+    background: #264653;
     transform: translateY(-5px);
     box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
   }

@@ -51,6 +51,7 @@ export const NavLink = styled(Link)`
   padding: 0;
   margin: 0px 14px;
   font-family: "Rubik", sans-serif;
+  cursor: pointer;
 `;
 
 export const NavbarToggler = styled.button`
@@ -79,6 +80,13 @@ export const NavbarBrand = styled.a`
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+`;
+
+export const Logo = styled.h1`
+  @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  color: #ffac5d;
 `;
 
 export const Options = styled.div`

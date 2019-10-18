@@ -27,13 +27,14 @@ const MainBanner = () => {
       <Wrapper>
         <HeroBox>
           <HeroContentHeading>
-            Remori Data Driven Startup Argentina
+            We build data driven software
           </HeroContentHeading>
           <HeroContentText>
-            "Data Driven Business" We gather and measure all business' aspects
-            of startups to eventually accumulate experience of success and
-            failures. Share your idea and experience! Together we can build
-            concrete foundation of our challenges.
+            We are a digital product and service provider. We work with companies
+            who are interested in building well designed software
+            and who are interested in data driven business.
+            Our organization accumulates experience of success and
+            failures. Together we can build a foundation of our challenges.
           </HeroContentText>
           <Link to="contact" smooth>
             <StyledButton>Be Our Partners!</StyledButton>

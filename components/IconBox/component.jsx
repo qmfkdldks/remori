@@ -30,7 +30,7 @@ IconBox.defaultProps = {
   primary: "#44ce6f",
   secondary: "#cdf1d8",
   icon: "Layout",
-  onClick: () => {}
+  onClick: null
 };
 
 export default IconBox;

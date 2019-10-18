@@ -5,9 +5,9 @@ import ProjectCard from "../ProjectCard";
 import Bar from "../Bar";
 import { Shape4 } from "../Shape";
 
-import Proveat from "./images/1.jpg";
+import Proveat from "./images/deliveries.png";
 import ProveatMobile from "./images/proveat-mobile.webp";
-import Solvi from "./images/3.jpg";
+import Solvi from "./images/solvi.webp";
 import SueldoHoy from "./images/sueldohoy.webp";
 
 const responsive = [
@@ -16,7 +16,7 @@ const responsive = [
   { breakPoint: 0, cardsToShow: 1 }
 ];
 
-const RecentWork = () => {
+const ProjectArea = () => {
   return (
     <WorkArea>
       <SectionTitle>
@@ -44,11 +44,6 @@ const RecentWork = () => {
           description="Mobile App to record incomes and costs of restaurant operation."
         />
         <ProjectCard
-          imgUrl={SueldoHoy}
-          title="SueldoHoy"
-          description="A calculator which shows how inflation (55.8%) changed Argentina market in less than 5 interactinos."
-        />
-        <ProjectCard
           imgUrl={Solvi}
           title="Solvi"
           description="Calculate demanding stock in the future with collected data"
@@ -60,4 +55,4 @@ const RecentWork = () => {
   );
 };
 
-export default RecentWork;
+export default ProjectArea;

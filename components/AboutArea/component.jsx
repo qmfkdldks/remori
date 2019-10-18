@@ -7,25 +7,12 @@ import {
   Heading,
   FirstRow,
   Image,
-  Text
+  Text,
+  AboutCard
 } from "./style";
 import Bar from "../Bar";
 
 import TeamImage from "./images/1.png";
-
-const AboutCard = ({ head, body }) => {
-  return (
-    <div>
-      <Heading>{head}</Heading>
-      <Text>{body}</Text>
-    </div>
-  );
-};
-
-AboutCard.propTypes = {
-  head: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired
-};
 
 const AboutArea = () => {
   return (
@@ -35,7 +22,7 @@ const AboutArea = () => {
 
         <div>
           <SectionTitle>
-            <Heading>About Us</Heading>
+            <Heading>Process</Heading>
             <Bar />
             We need a system that helps us to be tolerant to failures.
           </SectionTitle>
@@ -55,23 +42,20 @@ const AboutArea = () => {
 
       <AboutInnerArea>
         <AboutCard
-          head="Our History"
-          body="After various failures and lessons, we decided to create Remori to
-            help individuals and entrepreneurs who have great creativity. We
-            started this platform at 2019."
+          head="1. Define Objective"
+          body="Before designing product, it's crucial to set clear and descriptive objectives.
+          You should define simplest MVP to see the reaction of the market as soon as possible.
+          ex) A fintech mobile app which 5% of users invest $100 on a monthly basis."
         />
 
         <AboutCard
-          head="Our Mission"
-          body="We are building platform that connects individuals and
-            entrepreneurs. We hope we can share experiences, knowledges,
-            opportunities and data to make our community stronger."
+          head="2. Design Digital Ecosystem"
+          body="From the beginning we need to design the lifecycle of the project and software architecture because it dictates the sustainability and flexibility of the product. In this phase we define how to deploy product, what data we collect and how to modularize processes."
         />
 
         <AboutCard
-          head="Who we are"
-          body="We are aiming to create transparent community. So we can share
-            experience and opportunites with confidence."
+          head="3. Build Product"
+          body="On top of the objectives, plan and digital ecosytem, we start building prodcut with iterative development process. We develop product as right as possible within the timeframe. We record and get feedbacks from mistakes and errors and we solve them one by one."
         />
       </AboutInnerArea>
     </Wrapper>
