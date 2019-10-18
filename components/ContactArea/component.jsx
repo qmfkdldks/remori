@@ -65,7 +65,6 @@ const ContactArea = () => {
             .then(res => {
               setSubmitting(false);
               setStatus(res.status);
-              console.log(res.status);
             })
             .catch(err => {
               setSubmitting(false);

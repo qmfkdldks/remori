@@ -11,6 +11,7 @@ export const Box = styled.div`
   box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
   transition: 0.5s;
   min-height: 300px;
+  margin-bottom: 10px;
 
   &::before {
     content: "";

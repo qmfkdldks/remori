@@ -2,7 +2,7 @@ import React from "react";
 import IconBox from "../IconBox";
 import { Section } from "./style";
 
-const BoxArea = () => {
+const IconBoxArea = () => {
   return (
     <Section>
       <IconBox
@@ -38,4 +38,4 @@ const BoxArea = () => {
   );
 };
 
-export default BoxArea;
+export default IconBoxArea;

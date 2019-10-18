@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Icon from "../component";
+import ContactArea from "../component";
 
-describe("Icon", () => {
+describe("ContactArea", () => {
   it("renders correctly", () => {
-    const tree = shallow(<Icon name="Layout" size={50} />);
+    const tree = shallow(<ContactArea />);
     expect(tree).toMatchSnapshot();
   });
 });

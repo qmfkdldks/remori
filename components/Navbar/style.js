@@ -51,6 +51,7 @@ export const NavLink = styled(Link)`
   padding: 0;
   margin: 0px 14px;
   font-family: "Rubik", sans-serif;
+  cursor: pointer;
 `;
 
 export const NavbarToggler = styled.button`
