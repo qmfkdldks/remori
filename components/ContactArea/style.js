@@ -34,8 +34,7 @@ export const ErrorMessage = styled(Formik.ErrorMessage)`
 `;
 
 export const ContactAreaWrapper = styled.div`
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 10px;
 `;
 
 export const SectionTitle = styled.div`

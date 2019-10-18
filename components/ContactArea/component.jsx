@@ -51,7 +51,7 @@ const ContactArea = () => {
           text: ""
         }}
         validationSchema={EmailSchema}
-        onSubmit={(values, { setSubmitting, setStatus }) => {
+        onSubmit={(values, { setSubmitting, setStatus, resetForm }) => {
           fetch(
             "https://ofw857kax6.execute-api.us-east-2.amazonaws.com/default/sendEmail",
             {
@@ -65,6 +65,8 @@ const ContactArea = () => {
             .then(res => {
               setSubmitting(false);
               setStatus(res.status);
+              resetForm();
+              console.log(res.status);
             })
             .catch(err => {
               setSubmitting(false);
