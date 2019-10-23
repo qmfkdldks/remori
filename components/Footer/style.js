@@ -21,6 +21,7 @@ export const Map = styled.img`
   z-index: -1;
   bottom: 0;
   opacity: 0.7;
+  max-width: 100%;
 `;
 
 export const Column = styled.div`
