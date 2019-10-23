@@ -3,6 +3,7 @@ import { Element } from "react-scroll";
 import Head from "next/head";
 import MainBanner from "../components/MainBanner";
 import IconBoxArea from "../components/IconBoxArea";
+import PartnersArea from "../components/PartnersArea";
 import ProjectArea from "../components/ProjectArea";
 import AboutArea from "../components/AboutArea";
 import ServiceArea from "../components/ServiceArea";
@@ -41,6 +42,7 @@ const Index = () => {
       <Navbar />
       <MainBanner />
       <IconBoxArea />
+      <PartnersArea />
       <Element name="projects">
         <ProjectArea />
       </Element>
