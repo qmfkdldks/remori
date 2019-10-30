@@ -1,6 +1,12 @@
 import React from "react";
 import { Element } from "react-scroll";
 import Head from "next/head";
+import Link from "next/link";
+
+import Prismic from "prismic-javascript";
+import { RichText, Date } from "prismic-reactjs";
+import { client, linkResolver, hrefResolver } from "../config/prismic";
+
 import MainBanner from "../components/MainBanner";
 import IconBoxArea from "../components/IconBoxArea";
 import PartnersArea from "../components/PartnersArea";
@@ -12,7 +18,7 @@ import Footer from "../components/Footer";
 import ContactArea from "../components/ContactArea";
 import CtaArea from "../components/CtaArea";
 
-const Index = () => {
+const Index = ({ posts }) => {
   return (
     <>
       <Head>
@@ -41,7 +47,23 @@ const Index = () => {
         <link rel="manifest" href="static/site.webmanifest" />
       </Head>
       <Navbar />
+      {posts.results.map(post => (
+        <li key={post.uid}>
+          {RichText.render(post.data.head)}
+          <Link
+            href={hrefResolver(post)}
+            as={linkResolver(post)}
+            passHref
+            prefetch
+          >
+            <a>{RichText.render(post.data.head)}</a>
+          </Link>
+          <span>{Date(post.data.date).toString()}</span>
+        </li>
+      ))}
+
       <MainBanner />
+
       <IconBoxArea />
       <PartnersArea />
       <Element name="projects">
@@ -60,6 +82,14 @@ const Index = () => {
       <Footer />
     </>
   );
+};
+
+Index.getInitialProps = async context => {
+  const posts = await client.query(
+    Prismic.Predicates.at("document.type", "image-post")
+  );
+
+  return { posts };
 };
 
 export default Index;
