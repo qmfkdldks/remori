@@ -27,17 +27,17 @@ const MainBanner = () => {
       <Wrapper>
         <HeroBox>
           <HeroContentHeading>
-            We build data driven software
+            We build custom data driven software
           </HeroContentHeading>
           <HeroContentText>
-            We are a digital product and service provider. We work with companies
-            who are interested in building well designed software
-            and who are interested in data driven business.
-            Our organization accumulates experience of success and
-            failures. Together we can build a foundation of our challenges.
+            We are a custom mobile and desktop development company. We work with
+            companies who are interested in building well designed software and
+            who are interested in data driven business. Our organization
+            accumulates experience of success and failures. Together we can
+            build a foundation of our challenges.
           </HeroContentText>
           <Link to="contact" smooth>
-            <StyledButton>Be Our Partners!</StyledButton>
+            <StyledButton>Build Minimum Viable Product!</StyledButton>
           </Link>
         </HeroBox>
         <WorkerBox>

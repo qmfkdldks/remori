@@ -1,11 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
 import Head from "next/head";
-import Link from "next/link";
-
 import Prismic from "prismic-javascript";
-import { RichText, Date } from "prismic-reactjs";
-import { client, linkResolver, hrefResolver } from "../config/prismic";
+import { client } from "../config/prismic";
 
 import MainBanner from "../components/MainBanner";
 import IconBoxArea from "../components/IconBoxArea";
@@ -17,15 +14,16 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactArea from "../components/ContactArea";
 import CtaArea from "../components/CtaArea";
+import PostArea from "../components/PostArea";
 
 const Index = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>Remori Data Driven Startup Argentina</title>
+        <title>web and mobile app development company</title>
         <meta
           name="description"
-          content="Platform to meet startup partners, projects and passions in Buenos Aires."
+          content="custom software and app development company."
         />
         <link
           rel="apple-touch-icon"
@@ -47,23 +45,7 @@ const Index = ({ posts }) => {
         <link rel="manifest" href="static/site.webmanifest" />
       </Head>
       <Navbar />
-      {posts.results.map(post => (
-        <li key={post.uid}>
-          {RichText.render(post.data.head)}
-          <Link
-            href={hrefResolver(post)}
-            as={linkResolver(post)}
-            passHref
-            prefetch
-          >
-            <a>{RichText.render(post.data.head)}</a>
-          </Link>
-          <span>{Date(post.data.date).toString()}</span>
-        </li>
-      ))}
-
       <MainBanner />
-
       <IconBoxArea />
       <PartnersArea />
       <Element name="projects">
@@ -74,6 +56,9 @@ const Index = ({ posts }) => {
       </Element>
       <Element name="services">
         <ServiceArea />
+      </Element>
+      <Element name="posts">
+        <PostArea posts={posts} />
       </Element>
       <Element name="contact">
         <ContactArea />
@@ -86,7 +71,8 @@ const Index = ({ posts }) => {
 
 Index.getInitialProps = async context => {
   const posts = await client.query(
-    Prismic.Predicates.at("document.type", "image-post")
+    Prismic.Predicates.at("document.type", "image-post"),
+    { pageSize: 3, page: 1, orderings: "[my.image-post.date desc]" }
   );
 
   return { posts };

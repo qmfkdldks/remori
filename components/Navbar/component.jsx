@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <Container>
       <Navbar>
-        <NavbarBrand>
+        <NavbarBrand href="/">
           <Logo>REMORI</Logo>
         </NavbarBrand>
 
@@ -42,7 +42,6 @@ const Header = () => {
             Contact
           </NavLink>
         </NavbarCollapse>
-
       </Navbar>
     </Container>
   );

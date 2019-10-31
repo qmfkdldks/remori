@@ -20,9 +20,8 @@ const Footer = () => {
         <Column>
           <Logo>Remori</Logo>
           <Text>
-            Remori is an organization building data driven products and
-            services. We try to find business system which can adopt to ever
-            changing market.
+            A group of developers building mobile app and websites. We try to
+            find business system which can adopt to ever changing market.
           </Text>
         </Column>
 

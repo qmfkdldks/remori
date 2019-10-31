@@ -18,7 +18,6 @@ export const Container = styled.header`
 
   &.is-sticky .startp-nav {
     background-color: #ffffff !important;
-    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding: 5px 0;
@@ -80,6 +79,7 @@ export const NavbarBrand = styled.a`
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  text-decoration: none;
 `;
 
 export const Logo = styled.h1`
