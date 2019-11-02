@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Article from "../components/Article";
 
-import { client, linkResolver } from "../config/prismic";
+import { client } from "../config/prismic";
 
 const Post = props => (
   <>
@@ -39,8 +39,8 @@ const Post = props => (
       head={RichText.render(props.post.data.head)}
       date={Date(props.post.data.date).toString()}
       url={props.postUrl}
+      imgUrl={props.post.data.image.url}
     >
-      {props.postUrl}
       {RichText.render(props.post.data.content)}
     </Article>
     <Footer />
@@ -49,7 +49,7 @@ const Post = props => (
 
 Post.getInitialProps = async context => {
   const { uid } = context.query;
-  const postUrl = context.req.headers.host + context.asPath;
+  const postUrl = `https://remori.com.ar${context.asPath}`;
   const post = await client.getByUID("image-post", uid);
 
   return { post, postUrl };

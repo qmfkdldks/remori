@@ -12,19 +12,6 @@ import {
 } from "./style";
 import Icon from "../Icon";
 
-/* <ImageWrapper>
-<Link href={href} passHref prefetch>
-  <a>
-    <img src={img} alt="image" />
-  </a>
-</Link>
-
-<Date className="date">
-  <Icon name="Calendar" size={35} />
-  {date}
-</Date>
-</ImageWrapper> */
-
 const Post = ({ head, content, img, href, as, date }) => {
   return (
     <Wrapper>

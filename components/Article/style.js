@@ -5,16 +5,16 @@ export const Wrapper = styled.div`
   position: relative;
   font-family: "Rubik", sans-serif;
   margin: auto;
-  max-width: 1140px;
-  width: 66%;
+  max-width: 768px;
+  width: 90%;
 
   box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
     0 7px 18px rgba(0, 9, 128, 0.05);
   background: #ffffff;
 `;
 
-export const ImageWrapper = styled.div`
-  position: relative;
+export const Image = styled.img`
+  max-width: 100%;
 `;
 
 export const Head = styled.h3`

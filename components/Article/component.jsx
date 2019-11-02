@@ -6,22 +6,16 @@ import {
   TwitterShareButton,
   RedditShareButton
 } from "react-share";
-import { Wrapper, ImageWrapper, Head, Content, SharePost } from "./style";
+import { Wrapper, Image, Head, Content, SharePost } from "./style";
 import Icon from "../Icon";
 
-const Article = ({ head, url, img, href, as, date, children }) => {
+const Article = ({ head, url, imgUrl, href, as, date, children }) => {
   return (
     <Wrapper>
-      <div className="blog-details">
-        <ImageWrapper>
-          {/* <img
-                  src={require("../../static/images/blog-details.jpg")}
-                  alt="blog-details"
-                /> */}
-        </ImageWrapper>
+      <Image src={imgUrl} />
 
-        <Content>
-          {/* <ul className="category">
+      <Content>
+        {/* <ul className="category">
                   <li>
                     <Link href="#">
                       <a>IT</a>
@@ -34,44 +28,36 @@ const Article = ({ head, url, img, href, as, date, children }) => {
                   </li>
                 </ul> */}
 
-          <Head>{head}</Head>
+        <Head>{head}</Head>
 
-          {children}
+        {children}
 
-          <SharePost className="share-Article">
-            <ul>
-              <li>
-                <FacebookShareButton url={url}>
-                  <a>
-                    <Icon name="Facebook" />
-                  </a>
-                </FacebookShareButton>
-              </li>
-              <li>
-                <TwitterShareButton url={url}>
-                  <a>
-                    <Icon name="Twitter" />
-                  </a>
-                </TwitterShareButton>
-              </li>
-              <li>
-                <Link href="#">
-                  <a>
-                    <Icon name="Instagram" />
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a>
-                    <Icon name="Linkedin" />
-                  </a>
-                </Link>
-              </li>
-            </ul>
-          </SharePost>
-        </Content>
-      </div>
+        <SharePost className="share-Article">
+          <ul>
+            <li>
+              <FacebookShareButton url={url}>
+                <a>
+                  <Icon name="Facebook" />
+                </a>
+              </FacebookShareButton>
+            </li>
+            <li>
+              <TwitterShareButton url={url}>
+                <a>
+                  <Icon name="Twitter" />
+                </a>
+              </TwitterShareButton>
+            </li>
+            <li>
+              <LinkedinShareButton url={url}>
+                <a>
+                  <Icon name="Instagram" />
+                </a>
+              </LinkedinShareButton>
+            </li>
+          </ul>
+        </SharePost>
+      </Content>
     </Wrapper>
   );
 };
