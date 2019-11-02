@@ -14,7 +14,7 @@ export const accessToken = "";
 // Modify as your project grows to handle any new routes you've made
 export const linkResolver = doc => {
   if (doc.type === "image-post") {
-    return `/blog/${doc.uid}`;
+    return `/post?uid=${doc.uid}`;
   }
   return "/";
 };

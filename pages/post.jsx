@@ -38,8 +38,9 @@ const Post = props => (
     <Article
       head={RichText.render(props.post.data.head)}
       date={Date(props.post.data.date).toString()}
-      url={linkResolver(props.post)}
+      url={props.postUrl}
     >
+      {props.postUrl}
       {RichText.render(props.post.data.content)}
     </Article>
     <Footer />
@@ -48,9 +49,10 @@ const Post = props => (
 
 Post.getInitialProps = async context => {
   const { uid } = context.query;
+  const postUrl = context.req.headers.host + context.asPath;
   const post = await client.getByUID("image-post", uid);
 
-  return { post };
+  return { post, postUrl };
 };
 
 export default Post;

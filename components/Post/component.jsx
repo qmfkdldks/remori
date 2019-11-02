@@ -13,7 +13,7 @@ import {
 import Icon from "../Icon";
 
 /* <ImageWrapper>
-<Link href={href} as={as} passHref prefetch>
+<Link href={href} passHref prefetch>
   <a>
     <img src={img} alt="image" />
   </a>
