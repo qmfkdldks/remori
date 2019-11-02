@@ -4672,6 +4672,14 @@ create-react-context@^0.3.0:
     gud "^1.0.0"
     warning "^4.0.3"
 
+cross-fetch@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-2.2.3.tgz#e8a0b3c54598136e037f8650f8e823ccdfac198e"
+  integrity sha512-PrWWNH3yL2NYIb/7WF/5vFG3DCQiXDOVf8k3ijatbrtnwNuhMWLC7YF7uqf53tbTFDzHIUD8oITw4Bxt8ST3Nw==
+  dependencies:
+    node-fetch "2.1.2"
+    whatwg-fetch "2.0.4"
+
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -4864,7 +4872,7 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
-debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.9:
+debug@2.6.9, debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -8205,6 +8213,13 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jsonp@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsonp/-/jsonp-0.2.1.tgz#a65b4fa0f10bda719a05441ea7b94c55f3e15bae"
+  integrity sha1-pltPoPEL2nGaBUQep7lMVfPhW64=
+  dependencies:
+    debug "^2.1.3"
+
 jsprim@^1.2.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsprim/-/jsprim-1.4.1.tgz#313e66bc1e5cc06e438bc1b7499c2e5c56acb6a2"
@@ -9094,6 +9109,11 @@ node-dir@^0.1.10:
   integrity sha1-X1Zl2TNRM1yqvvjxxVRRbPXx5OU=
   dependencies:
     minimatch "^3.0.2"
+
+node-fetch@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.1.2.tgz#ab884e8e7e57e38a944753cec706f788d1768bb5"
+  integrity sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=
 
 node-fetch@2.3.0:
   version "2.3.0"
@@ -10041,6 +10061,36 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
+prismic-helpers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/prismic-helpers/-/prismic-helpers-1.0.0.tgz#8337420cf187f55fb7b7a8be755523c8696fc329"
+  integrity sha1-gzdCDPGH9V+3t6i+dVUjyGlvwyk=
+
+prismic-javascript@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/prismic-javascript/-/prismic-javascript-2.1.1.tgz#fd82bd3a8882acc69c7b52c257340516dadec0d2"
+  integrity sha512-37j0Ypqwk/cM/x5VB1pdMS0I9umHIfQbB7TxiXeVjQjqz6zuZSdToYy67VB7lEDUWLZE4U4k1H2zTSH1QUFi+g==
+  dependencies:
+    cross-fetch "^2.2.3"
+    promise-polyfill "8.0.0"
+
+prismic-reactjs@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/prismic-reactjs/-/prismic-reactjs-1.1.1.tgz#598b54b611da0bda7591fff710f9ec4422cd2927"
+  integrity sha512-Z1JEmOFUjF4ylm9Rbt19bbRkpDIkDnlG4GJdlXIaD5uZAyW/q+tCWwYIYzuT8a1exod2SWQB7mXEXXCQo9xrgQ==
+  dependencies:
+    prismic-helpers "^1.0.0"
+    prismic-richtext "^1.0.3"
+    prop-types "^15.7.2"
+
+prismic-richtext@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/prismic-richtext/-/prismic-richtext-1.0.3.tgz#ce8c8c18d65b01f1036f222b993ad2de700199fe"
+  integrity sha512-ZM45dVPL713+oDpt8ysWRY2pw3esBxRrqBlUO+q/T0WK0SNVSq29tQYhVdIALd8hRfF7X1lfpW0Q0YymEdh0AA==
+  dependencies:
+    ramda "^0.26.1"
+    uuid "^3.3.2"
+
 prismjs@^1.8.4, prismjs@~1.17.0:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
@@ -10072,6 +10122,11 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
+
+promise-polyfill@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.0.0.tgz#b47c7fc74052cc5b2132b703cca144f1a5eb56ef"
+  integrity sha512-QGmPnw2hDEaRS6freHynJ7nfS1nDg0/P0c/CGglA43utoJjYQMiY9ojEpK0HaJ4wbUztdmwqQRlEfGWdsEQ5uQ==
 
 promise.allsettled@^1.0.0:
   version "1.0.1"
@@ -10299,6 +10354,11 @@ ramda@^0.21.0:
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.21.0.tgz#a001abedb3ff61077d4ff1d577d44de77e8d0a35"
   integrity sha1-oAGr7bP/YQd9T/HVd9RN536NCjU=
+
+ramda@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
+  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
 randexp@0.4.6:
   version "0.4.6"
@@ -10575,6 +10635,16 @@ react-select@^3.0.0:
     react-input-autosize "^2.2.1"
     react-transition-group "^2.2.1"
 
+react-share@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-share/-/react-share-3.0.1.tgz#be9dc3f80059c4fed33542472f4e7425bb3a76cb"
+  integrity sha512-xo4zjYP78h6zrBN5rlC06bb877js7216KFeZELAZP6sYxVoqmU27ChrfnpKUCL9H8F5PwYXh6DLNdAp+0E17GA==
+  dependencies:
+    babel-runtime "^6.26.0"
+    classnames "^2.2.5"
+    jsonp "^0.2.1"
+    prop-types "^15.5.8"
+
 react-sizeme@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/react-sizeme/-/react-sizeme-2.6.7.tgz#231339ce8821ac2c26424c791e0027f89dae3e90"
@@ -10646,6 +10716,13 @@ react-transition-group@^2.2.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
+
+react-truncate-string@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-truncate-string/-/react-truncate-string-1.3.0.tgz#184fbda8d3a1931d87a05235ae649c0ca656a772"
+  integrity sha512-ZwMCNH0LMoqalJSziI0dhzlFFaCjDaax8SLsgZq+47aCcvtZzOYpT+vKJZEfmYJzObHQL9bV4CIqr4FMX3eZhQ==
+  dependencies:
+    throttle-debounce "^2.0.1"
 
 react@^16.2.0:
   version "16.10.2"
@@ -12176,7 +12253,7 @@ throat@^4.0.0:
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
   integrity sha1-iQN8vJLFarGJJua6TLsgDhVnKmo=
 
-throttle-debounce@^2.1.0:
+throttle-debounce@^2.0.1, throttle-debounce@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-2.1.0.tgz#257e648f0a56bd9e54fe0f132c4ab8611df4e1d5"
   integrity sha512-AOvyNahXQuU7NN+VVvOOX+uW6FPaWdAOdRP5HfwYxAfCzXTFKRMoIMk+n+po318+ktcChx+F1Dd91G3YHeMKyg==
@@ -12850,6 +12927,11 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
   integrity sha512-b5lim54JOPN9HtzvK9HFXvBma/rnfFeqsic0hSpjtDbVxR3dJKLc+KB4V6GgiGOvl7CY/KNh8rxSo9DKQrnUEw==
   dependencies:
     iconv-lite "0.4.24"
+
+whatwg-fetch@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
+  integrity sha512-dcQ1GWpOD/eEQ97k66aiEVpNnapVj90/+R+SXTPYGHpYBBypfKJEQjLrvMZ7YXbKm21gXd4NcuxUTjiv1YtLng==
 
 whatwg-fetch@>=0.10.0:
   version "3.0.0"

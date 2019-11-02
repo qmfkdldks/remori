@@ -1,6 +1,9 @@
 import React from "react";
 import { Element } from "react-scroll";
 import Head from "next/head";
+import Prismic from "prismic-javascript";
+import { client } from "../config/prismic";
+
 import MainBanner from "../components/MainBanner";
 import IconBoxArea from "../components/IconBoxArea";
 import PartnersArea from "../components/PartnersArea";
@@ -11,15 +14,16 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactArea from "../components/ContactArea";
 import CtaArea from "../components/CtaArea";
+import PostArea from "../components/PostArea";
 
-const Index = () => {
+const Index = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>Remori Data Driven Startup Argentina</title>
+        <title>web and mobile app development company</title>
         <meta
           name="description"
-          content="Platform to meet startup partners, projects and passions in Buenos Aires."
+          content="custom software and app development company."
         />
         <link
           rel="apple-touch-icon"
@@ -53,6 +57,9 @@ const Index = () => {
       <Element name="services">
         <ServiceArea />
       </Element>
+      <Element name="posts">
+        <PostArea posts={posts} />
+      </Element>
       <Element name="contact">
         <ContactArea />
       </Element>
@@ -60,6 +67,15 @@ const Index = () => {
       <Footer />
     </>
   );
+};
+
+Index.getInitialProps = async context => {
+  const posts = await client.query(
+    Prismic.Predicates.at("document.type", "image-post"),
+    { pageSize: 3, page: 1, orderings: "[my.image-post.date desc]" }
+  );
+
+  return { posts };
 };
 
 export default Index;

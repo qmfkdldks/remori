@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <Container>
       <Navbar>
-        <NavbarBrand>
+        <NavbarBrand href="/">
           <Logo>REMORI</Logo>
         </NavbarBrand>
 
@@ -38,11 +38,13 @@ const Header = () => {
           <NavLink to="services" smooth>
             Services
           </NavLink>
+          <NavLink to="posts" smooth>
+            Posts
+          </NavLink>
           <NavLink to="contact" smooth>
             Contact
           </NavLink>
         </NavbarCollapse>
-
       </Navbar>
     </Container>
   );

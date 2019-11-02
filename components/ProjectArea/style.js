@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const WorkArea = styled.section`
-  @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
-
   position: relative;
   z-index: 1;
   padding-top: 80px;

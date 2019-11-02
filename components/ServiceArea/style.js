@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
   font-family: "Rubik", sans-serif;
 
   display: flex;
