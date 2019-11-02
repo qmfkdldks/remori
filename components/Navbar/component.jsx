@@ -38,6 +38,9 @@ const Header = () => {
           <NavLink to="services" smooth>
             Services
           </NavLink>
+          <NavLink to="posts" smooth>
+            Posts
+          </NavLink>
           <NavLink to="contact" smooth>
             Contact
           </NavLink>
