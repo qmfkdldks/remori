@@ -10,6 +10,7 @@ import ServiceArea from "../components/ServiceArea";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactArea from "../components/ContactArea";
+import CtaArea from "../components/CtaArea";
 
 const Index = () => {
   return (
@@ -55,6 +56,7 @@ const Index = () => {
       <Element name="contact">
         <ContactArea />
       </Element>
+      <CtaArea />
       <Footer />
     </>
   );
