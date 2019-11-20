@@ -34,7 +34,7 @@ const Post = props => (
       />
       <link rel="manifest" href="static/site.webmanifest" />
     </Head>
-    <Navbar />
+    <Navbar isBlog />
     <Article
       head={RichText.render(props.post.data.head)}
       date={Date(props.post.data.date).toString()}

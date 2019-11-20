@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { Menu } from "styled-icons/feather/Menu";
 import { Link } from "react-scroll";
+import NextLink from "next/link";
 
 export const Container = styled.header`
   max-width: 1170px;
@@ -51,6 +52,17 @@ export const NavLink = styled(Link)`
   margin: 0px 14px;
   font-family: "Rubik", sans-serif;
   cursor: pointer;
+`;
+
+export const NavNextLink = styled.a`
+  font-weight: 500;
+  font-size: 14px;
+  color: #4a6f8a;
+  padding: 0;
+  margin: 0px 14px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  text-decoration: unset;
 `;
 
 export const NavbarToggler = styled.button`
