@@ -4,11 +4,12 @@ import { Section } from "./style";
 import Post from "../Post";
 import { linkResolver, hrefResolver } from "../../config/prismic";
 
-const PostArea = ({ posts }) => {
+const PostArea = ({ results }) => {
   return (
     <Section>
-      {posts.results.map(post => (
+      {results.map(post => (
         <Post
+          key={post.id}
           img={post.data.image.thumbnail.url}
           head={RichText.render(post.data.head)}
           content={RichText.asText(post.data.content)}
